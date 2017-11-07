@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+  <body>
+<!--Блок шапки-->
+		<header class="main-header">
+      <div class="main-header-wrapper">
+				<div class="header-logo">
+				  <img src="img/logo.png" width="154" height="64" alt="Логотип Нёрдс">
+				</div>
+				<nav class="main-navigation">
+					<ul class="main-nav">
+						<li class="border-li-one"><a class="border-li-one-page" href="#">Студия</a></li>
+						<li class="border-li-two"><a class="border-li-one-page" href="#">Клиенты</a></li>
+						<li class="border-li-tree"><a class="border-li-one-page" href="#">Магазин</a></li>
+            <li class="border-li-tree"><a class="border-li-one-page" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+<!--Модальная Форма корзины-->
+				<div class="user-block">
+					<div class="user-block_basket">
+						<a class="basket-link" href="#">Корзина</a>
+          </div><!--/Модальная Форма корзины-->
+			  </div>
+      </div><!--/Блок шапки-->
+      <div class="">
+        <h2 class="">Магазин готовых шаблонов</h2>
+      </div>
+		</header>
+<!--Содержание основного блока-->
+		<main class="container-forms">
+<!--Блок выбора шаблонов - фильтр-->
+  		<div class="selection-form">
+  			<form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+  				<div class="price-form range-filter">
+  					<div class="price-controls">
+  						<label class="min-price choice">Стоимость:<input type="text" name="min-price" value="0"> руб.</label>
+  						<label class="max-price choice">- <input  type="text" name="max-price" value="15000"> руб.</label>
+  					</div>
+  					<div class="range-controls">
+  						<div class="scale">
+  							<div class="bar" style="margin-left: 20%; width: 50%"></div>
+  						</div>
+  						<div class="toggle toggle-min"></div>
+  						<div class="toggle toggle-max"></div>
+  					</div>
+  				</div>
+  				<div class="grid-catalog"><!--Сетка-->
+  					<span class="grid-title">Сетка:</span><br>
+  					<section class="grid-item">
+  						<input type="radio" name="fatness-ice" id="adaptive" value="adaptive" checked><label class="grid-item_label" for="adaptive">Адаптивная</label>
+  						<input type="radio" name="fatness-ice" id="fix" value="fix"><label class="grid-item_label" for="fix">Фиксированная</label>
+  						<input type="radio" name="fatness-ice" id="rubber" value="rubber"><label class="grid-item_label" for="rubber">Резиновая</label>
+  					</section>
+  				</div>
+  				<div class="specialty-catalog"><!--Особенности-->
+  					<span class="specialty-title">Особенности:</span><br>
+  					<section class="specialty-item">
+  						<input type="checkbox" name="check-choko" id="check1" checked><label class="specialty-item_chek" for="check1">Слайдер</label>
+  						<input type="checkbox" name="check-sugar" id="check2" ><label class="specialty-item_chek" for="check2">Блок преимуществ</label>
+  						<input type="checkbox" name="check-choko" id="check3" checked><label class="specialty-item_chek" for="check3">Новости</label>
+  						<input type="checkbox" name="check-choko" id="check4"><label class="specialty-item_chek" for="check4">Галерея</label>
+  						<input type="checkbox" name="check-choko" id="check5"><label class="specialty-item_chek" for="check5">Корзина</label>
+  					</section>
+  				</div>
+  				<a class="btn-apply" href="#">Показать</a>
+  			</form>
+  		</div><!--/Блок выбора шаблонов-->
+<!--Блок отсортированных шаблонов-->
+      <div class="selected-forms">
+        <form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+          <div class="sorting">
+            <label class="choice" for="sorting">Сортировка:</label><br>
+            <select name="sorting" id="sorting">
+              <option selected>по цене</option>
+              <option>по типу</option>
+              <option>по названию</option>
+            </select>
+          </div>
+        </form>
+        <div class="selected-items">
+          <div class="selected-item">
+            <div class="selected-item_slider">
+
+            </div>
+            <div class="selected-item_img">
+              <img>
+            </div>
+          </div>
+          <div class="selected-item">
+            <div class="selected-item_slider">
+
+            </div>
+            <div class="selected-item_img">
+              <img>
+            </div>
+          </div>
+          <div class="selected-item">
+            <div class="selected-item_slider">
+
+            </div>
+            <div class="selected-item_img">
+              <img>
+            </div>
+          </div>
+          <div class="selected-item">
+            <div class="selected-item_slider">
+
+            </div>
+            <div class="selected-item_img">
+              <img>
+            </div>
+          </div>
+          <div class="selected-item">
+            <div class="selected-item_slider">
+
+            </div>
+            <div class="selected-item_img">
+              <img>
+            </div>
+          </div>
+          <div class="selected-item">
+            <div class="selected-item_slider">
+
+            </div>
+            <div class="selected-item_img">
+              <img>
+            </div>
+          </div>
+          <ul class="pages-ices">
+            <li><a class="prev disabled" href="#prev">Назад</a></li>
+            <li><a class="active-page" href="#">1</a></li>
+            <li><a class="hover" href="#">2</a></li>
+            <li><a class="hover" href="#">3</a></li>
+            <li><a class="next" href="#next">Следующая</a></li>
+          </ul>
+        </div>
+    </div>
+    </main>
+<!--Блок проезда-адреса-->
+		<div class="driving-address container-map" id="yandex-map">
+			<div class="driving">
+				<span class="Name-company">NЁRDS DESIGN STUDIO</span><br>
+        <span class="adds">191186, Санкт-Петербург<br>
+                  ул. Б. Конюшенная, д. 19/8</span><br>
+        <span class="Tel">тел. +7 (812) 275-75-75</span><br>
+				<a class="btn-feedback" href="./form_feedback.html">Напиши нам</a>
+			</div>
+		</div><!--/Блок проезда-адреса-->
+<!--Блок подвала-->
+		<footer>
+			<div class="container clearfix">
+				<section class="footer-social">
+          <a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
+				</section>
+				<section class="footer-contacts">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+				</section>
+			</div>
+		</footer><!--/Блок подвала-->
+<!--Модальные формы-->
+<!--Модальная Форма обратной связи-->
+	<script src="js/script.min.js"></script>
+  </body>
+</html>

@@ -3,10 +3,167 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
+<!--Блок шапки-->
+		<header class="main-header">
+      <div class="main-header-wrapper">
+				<div class="header-logo">
+				  <img src="img/logo.png" width="154" height="64" alt="Логотип Нёрдс">
+				</div>
+				<nav class="main-navigation">
+					<ul class="main-nav">
+						<li class="border-li-one"><a class="border-li-one-page" href="#">Студия</a></li>
+						<li class="border-li-two"><a class="border-li-one-page" href="#">Клиенты</a></li>
+						<li class="border-li-tree"><a class="border-li-one-page" href="#">Магазин</a></li>
+            <li class="border-li-tree"><a class="border-li-one-page" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+<!--Модальная Форма корзины-->
+				<div class="user-block">
+					<div class="user-block_basket">
+						<a class="basket-link" href="#">Корзина</a>
+          </div><!--/Модальная Форма корзины-->
+			  </div>
+      </div><!--/Блок шапки-->
+		</header>
+<!--Содержание основного блока-->
+		<main class="container">
+<!--Формы слайда-->
+    <div class="about">
+      <div class="about-more-learn">
+        <b>Долго, дорого, скрупулезно</b>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+        <a class="more-learn_link" href="#">Узнать больше</a>
+      </div>
+			<div class="about-sliders">
+				<div class="slide slide-one" id="slide-one">
+					<div class="slide-title">XXX</div>
+					<a class="slide-btn" href="#">XXX</a>
+				</div>
+				<div class="slide slide-two" id="slide-two">
+					<div class="slide-title">XXXX</div>
+					<a class="slide-btn" href="#">XXX</a>
+				</div>
+				<div class="slide slide-three" id="slide-three">
+					<div class="slide-title">XXXX</div>
+					<a class="slide-btn" href="#">XXX</a>
+				</div>
+				<div class="sliders-controls">
+					<label for="btn-one"></label>
+					<label for="btn-two"></label>
+					<label for="btn-three"></label>
+				</div>
+			</div>
+    </div>
+<!--Блок промо акции-->
+			<div class="promo">
+				<div class="promo-site">
+          <div>
+            <img src="img/promo-site.png" width="154" height="64" alt="Иконка промо сайтов">
+          </div>
+          <h3>Веб-сайты</h3>
+					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="btn-promo btn-promo-site" href="#">Заказать</a>
+				</div>
+        <div class="promo-site"> <!--apps приложения-->
+          <div>
+            <img src="img/promo-apps.png" width="154" height="64" alt="Иконка промо приложений">
+          </div>
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="btn-promo btn-promo-apps" href="#">Заказать</a>
+        </div>
+        <div class="promo-site">
+          <div>
+            <img src="img/promo-presentation.png" width="154" height="64" alt="Иконка промо презентации">
+          </div>
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn-promo btn-promo-presentation" href="#">Заказать</a>
+        </div>
+			</div><!--/Блок промо акции-->
+<!--Блок описания компании-->
+			<div class="description">
+        <div class="description-about">
+          <b class="description-about-big">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <span>Выполняем заказы на разработку:</span>
+          <ul class="description-about_orders">
+            <li class="description-about_order">Веб-&mdash;сайтов любой сложности</li>
+            <li class="description-about_order">Мобильных приложений для IOS и Android</li>
+            <li class="description-about_order">Слайдшоу и видео для корпоративных призентаций</li>
+          </ul>
+        </div>
+				<div class="description-statistics">
+          <div>
+            <img src="img/description-statistics.png" width="154" height="64" alt="Иконка статистики">
+          </div>
+					<span class="description-statistics-about">С 2004 года любим точность во всем:</span>
+          <div class="description-statistics-numbers"><!--А можно тут через список сделать а не через див-->
+            <div class="description-statistics-number">
+              <span class="description-statistics-number_percent">146%</span>
+              <span class="description-statistics-number_name">Уровень самоотдачи</span>
+            </div>
+            <div class="description-statistics-number">
+              <span class="description-statistics-number_percent">100%</span>
+              <span class="description-statistics-number_name">Соблюдение сроков</span>
+            </div>
+            <div class="description-statistics-number">
+              <span class="description-statistics-number_percent">50%</span>
+              <span class="description-statistics-number_name">Минимальная предоплата</span>
+            </div>
+          </div>
+				</div>
+			</div><!--/Блок описания компании-->
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+<!--Блок портфолио выполненных сайтов-->
+    <div class="portfolio">
+      <section class="portfolio-catalog">
+          <span class="portfolio-catalog-site">
+            <img src="img/html-site.png" width="61" height="61" alt="Иконка ХТМЛ Академии">
+          </span>
+          <span class="portfolio-catalog-site">
+            <img src="img/barbershop-site.png" width="61" height="61" alt="Иконка Барбершопа">
+          </span>
+          <span class="portfolio-catalog-site">
+            <img src="img/pink-site.png" width="61" height="61" alt="Иконка Пинк">
+          </span>
+          <span class="portfolio-catalog-site">
+            <img src="img/Mishka-site.png" width="61" height="61" alt="Иконка Мишки">
+          </span>
+      </section>
+    </div><!--/Блок портфолио выполненных сайтов-->
+    </main>
+<!--Блок проезда-адреса-->
+		<div class="driving-address container-map" id="yandex-map">
+			<div class="driving">
+				<span class="Name-company">NЁRDS DESIGN STUDIO</span><br>
+        <span class="adds">191186, Санкт-Петербург<br>
+                  ул. Б. Конюшенная, д. 19/8</span><br>
+        <span class="Tel">тел. +7 (812) 275-75-75</span><br>
+				<a class="btn-feedback" href="./form_feedback.html">Напиши нам</a>
+			</div>
+		</div><!--/Блок проезда-адреса-->
+<!--Блок подвала-->
+		<footer>
+			<div class="container clearfix">
+				<section class="footer-social">
+          <a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
+				</section>
+				<section class="footer-contacts">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+				</section>
+			</div>
+		</footer><!--/Блок подвала-->
+<!--Модальные формы-->
+<!--Модальная Форма обратной связи-->
+	<script src="js/script.min.js"></script>
   </body>
 </html>
