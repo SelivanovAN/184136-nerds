@@ -12,7 +12,7 @@
 		<header class="main-header">
       <div class="main-header-wrapper">
 				<div class="header-logo">
-				  <img src="img/logo.png" width="154" height="64" alt="Логотип Нёрдс">
+				  <a href="./index.html"><img src="img/logo.png" width="154" height="64" alt="Логотип Нёрдс"></a>
 				</div>
 				<nav class="main-navigation">
 					<ul class="main-nav">
@@ -35,103 +35,147 @@
 		</header>
 <!--Содержание основного блока-->
 		<main class="container-forms">
+      <div class="forms">
 <!--Блок выбора шаблонов - фильтр-->
-  		<div class="selection-form">
-  			<form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
-  				<div class="price-form range-filter">
-  					<div class="price-controls">
-  						<label class="min-price choice">Стоимость:<input type="text" name="min-price" value="0"> руб.</label>
-  						<label class="max-price choice">- <input  type="text" name="max-price" value="15000"> руб.</label>
-  					</div>
-  					<div class="range-controls">
-  						<div class="scale">
-  							<div class="bar" style="margin-left: 20%; width: 50%"></div>
-  						</div>
-  						<div class="toggle toggle-min"></div>
-  						<div class="toggle toggle-max"></div>
-  					</div>
-  				</div>
-  				<div class="grid-catalog"><!--Сетка-->
-  					<span class="grid-title">Сетка:</span><br>
-  					<section class="grid-item">
-  						<input type="radio" name="fatness-ice" id="adaptive" value="adaptive" checked><label class="grid-item_label" for="adaptive">Адаптивная</label>
-  						<input type="radio" name="fatness-ice" id="fix" value="fix"><label class="grid-item_label" for="fix">Фиксированная</label>
-  						<input type="radio" name="fatness-ice" id="rubber" value="rubber"><label class="grid-item_label" for="rubber">Резиновая</label>
-  					</section>
-  				</div>
-  				<div class="specialty-catalog"><!--Особенности-->
-  					<span class="specialty-title">Особенности:</span><br>
-  					<section class="specialty-item">
-  						<input type="checkbox" name="check-choko" id="check1" checked><label class="specialty-item_chek" for="check1">Слайдер</label>
-  						<input type="checkbox" name="check-sugar" id="check2" ><label class="specialty-item_chek" for="check2">Блок преимуществ</label>
-  						<input type="checkbox" name="check-choko" id="check3" checked><label class="specialty-item_chek" for="check3">Новости</label>
-  						<input type="checkbox" name="check-choko" id="check4"><label class="specialty-item_chek" for="check4">Галерея</label>
-  						<input type="checkbox" name="check-choko" id="check5"><label class="specialty-item_chek" for="check5">Корзина</label>
-  					</section>
-  				</div>
-  				<a class="btn-apply" href="#">Показать</a>
-  			</form>
-  		</div><!--/Блок выбора шаблонов-->
-<!--Блок отсортированных шаблонов-->
-      <div class="selected-forms">
-        <form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
-          <div class="sorting">
-            <label class="choice" for="sorting">Сортировка:</label><br>
-            <select name="sorting" id="sorting">
-              <option selected>по цене</option>
-              <option>по типу</option>
-              <option>по названию</option>
-            </select>
-          </div>
-        </form>
-        <div class="selected-items">
-          <div class="selected-item">
-            <div class="selected-item_slider">
-
+    		<div class="selection-form">
+    			<form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+    				<div class="price-form range-filter">
+    					<div class="price-controls">
+    						<label class="min-price choice">Стоимость:<input type="text" name="min-price" value="0"> руб.</label>
+    						<label class="max-price choice">- <input  type="text" name="max-price" value="15000"> руб.</label>
+    					</div>
+    					<div class="range-controls">
+    						<div class="scale">
+    							<div class="bar" style="margin-left: 20%; width: 50%"></div>
+    						</div>
+    						<div class="toggle toggle-min"></div>
+    						<div class="toggle toggle-max"></div>
+    					</div>
+    				</div>
+    				<div class="grid-catalog"><!--Сетка-->
+    					<span class="grid-title">Сетка:</span><br>
+    					<section class="grid-item">
+    						<input type="radio" name="fatness-ice" id="adaptive" value="adaptive" checked><label class="grid-item_label" for="adaptive">Адаптивная</label>
+    						<input type="radio" name="fatness-ice" id="fix" value="fix"><label class="grid-item_label" for="fix">Фиксированная</label>
+    						<input type="radio" name="fatness-ice" id="rubber" value="rubber"><label class="grid-item_label" for="rubber">Резиновая</label>
+    					</section>
+    				</div><!--/Сетка-->
+    				<div class="specialty-catalog"><!--Особенности-->
+    					<span class="specialty-title">Особенности:</span><br>
+    					<section class="specialty-item">
+    						<input type="checkbox" name="check-choko" id="check1" checked><label class="specialty-item_chek" for="check1">Слайдер</label>
+    						<input type="checkbox" name="check-sugar" id="check2" ><label class="specialty-item_chek" for="check2">Блок преимуществ</label>
+    						<input type="checkbox" name="check-choko" id="check3" checked><label class="specialty-item_chek" for="check3">Новости</label>
+    						<input type="checkbox" name="check-choko" id="check4"><label class="specialty-item_chek" for="check4">Галерея</label>
+    						<input type="checkbox" name="check-choko" id="check5"><label class="specialty-item_chek" for="check5">Корзина</label>
+    					</section>
+    				</div><!--/Особенности-->
+    				<button class="btn-apply" type="submit" title="Показать">Показать</button>
+    			</form>
+    		</div><!--/Блок выбора шаблонов-->
+  <!--Блок отсортированных шаблонов-->
+        <div class="selected-forms">
+          <form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+            <div class="sorting">
+              <label class="choice" for="sorting">Сортировка:</label><br>
+              <select name="sorting" id="sorting">
+                <option selected>по цене</option>
+                <option>по типу</option>
+                <option>по названию</option>
+              </select>
             </div>
-            <div class="selected-item_img">
-              <img>
-            </div>
-          </div>
-          <div class="selected-item">
-            <div class="selected-item_slider">
-
-            </div>
-            <div class="selected-item_img">
-              <img>
-            </div>
-          </div>
-          <div class="selected-item">
-            <div class="selected-item_slider">
-
-            </div>
-            <div class="selected-item_img">
-              <img>
-            </div>
-          </div>
-          <div class="selected-item">
-            <div class="selected-item_slider">
-
-            </div>
-            <div class="selected-item_img">
-              <img>
-            </div>
-          </div>
-          <div class="selected-item">
-            <div class="selected-item_slider">
-
-            </div>
-            <div class="selected-item_img">
-              <img>
-            </div>
-          </div>
-          <div class="selected-item">
-            <div class="selected-item_slider">
-
-            </div>
-            <div class="selected-item_img">
-              <img>
-            </div>
+          </form>
+          <div class="selected-items">
+            <section class="selected-item">
+              <div class="selected-item_slider">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </div>
+              <div class="selected-item_img">
+                <img>
+              </div>
+              <section class="">
+                <h4>Sedona</h4>
+                <span>Информационный сайт для туристов</span>
+                <button>9 900 руб.</button>
+              </section>
+            </section>
+            <section class="selected-item">
+              <div class="selected-item_slider">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </div>
+              <div class="selected-item_img">
+                <img>
+              </div>
+              <section class="">
+                <h4>Sedona</h4>
+                <span>Информационный сайт для туристов</span>
+                <button>9 900 руб.</button>
+              </section>
+            </section>
+            <section class="selected-item">
+              <div class="selected-item_slider">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </div>
+              <div class="selected-item_img">
+                <img>
+              </div>
+              <section class="">
+                <h4>Sedona</h4>
+                <span>Информационный сайт для туристов</span>
+                <button>9 900 руб.</button>
+              </section>
+            </section>
+            <section class="selected-item">
+              <div class="selected-item_slider">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </div>
+              <div class="selected-item_img">
+                <img>
+              </div>
+              <section class="">
+                <h4>Sedona</h4>
+                <span>Информационный сайт для туристов</span>
+                <button>9 900 руб.</button>
+              </section>
+            </section>
+            <section class="selected-item">
+              <div class="selected-item_slider">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </div>
+              <div class="selected-item_img">
+                <img>
+              </div>
+              <section class="">
+                <h4>Sedona</h4>
+                <span>Информационный сайт для туристов</span>
+                <button>9 900 руб.</button>
+              </section>
+            </section>
+            <section class="selected-item">
+              <div class="selected-item_slider">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </div>
+              <div class="selected-item_img">
+                <img>
+              </div>
+              <section class="">
+                <h4>Sedona</h4>
+                <span>Информационный сайт для туристов</span>
+                <button>9 900 руб.</button>
+              </section>
+            </section>
           </div>
           <ul class="pages-ices">
             <li><a class="prev disabled" href="#prev">Назад</a></li>
@@ -140,7 +184,7 @@
             <li><a class="hover" href="#">3</a></li>
             <li><a class="next" href="#next">Следующая</a></li>
           </ul>
-        </div>
+      </div>
     </div>
     </main>
 <!--Блок проезда-адреса-->
