@@ -95,7 +95,7 @@
               <section class="selected-item_visually-hidden">
                 <h4 class="selected-item_hidden_title">Sedona</h4>
                 <span>Информационный сайт для туристов</span>
-                <button class="selected-item_hidden_cost">9 900 руб.</button>
+                <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -110,7 +110,7 @@
               <section class="selected-item_visually-hidden">
                 <h4 class="selected-item_hidden_title">Pink app</h4>
                 <span class="selected-item_hidden_inform">Продуктовый лендинг приложения для IOS и Android</span>
-                <button class="selected-item_hidden_cost">9 900 руб.</button>
+                <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -125,7 +125,7 @@
               <section class="selected-item_visually-hidden">
                 <h4 class="selected-item_hidden_title">Barbershop</h4>
                 <span class="selected-item_hidden_inform">Сайт салоны красоты. Для мужчин, да.</span>
-                <button class="selected-item_hidden_cost">9 900 руб.</button>
+                <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -140,7 +140,7 @@
               <section class="selected-item_visually-hidden">
                 <h4 class="selected-item_hidden_title">Mishka</h4>
                 <span class="selected-item_hidden_inform">Информационный сайт для туристовИнтернет-магазин вязаных игрушек</span>
-                <button class="selected-item_hidden_cost">9 900 руб.</button>
+                <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -155,7 +155,7 @@
               <section class="selected-item_visually-hidden">
                 <h4 class="selected-item_hidden_title">A plus</h4>
                 <span class="selected-item_hidden_inform">Лендинг курсов повышения квалификации</span>
-                <button class="selected-item_hidden_cost">9 900 руб.</button>
+                <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -170,7 +170,7 @@
               <section class="selected-item_visually-hidden">
                 <h4 class="selected-item_hidden_title">Кваст</h4>
                 <span class="selected-item_hidden_inform">Промо-сайт производителя крафтового кваса</span>
-                <button class="selected-item_hidden_cost">9 900 руб.</button>
+                <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
           </div>
@@ -209,12 +209,25 @@
 		</footer><!--/Блок подвала-->
 <!--Модальные формы-->
 <!--Модальная Форма корзины-->
-	<div class="user-block">
-		<div class="user-block_basket">
-			<a class="basket-link" href="#">Корзина</a>
-    </div><!--/Модальная Форма корзины-->
-  </div>
+<div class="user-block">
+	<div class="user-block_basket">
+		<a class="basket-link" href="#">Корзина</a>
+  </div><!--/Модальная Форма корзины-->
+</div>
 <!--Модальная Форма обратной связи-->
+<div class="modal-feedback visually-hidden">
+  <button class="btn-modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
+  <h3>Напишите нам</h3>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+    <label class="feedback-form-title feedback-form-title_name" for="feedback-name_field">Ваше имя:</label>
+    <input class="feedback-name" type="text" name="feedback-name" id="feedback-name_field" placeholder="Представьтесь, пожалуйста">
+    <label class="feedback-form-title feedback-form-title_email" for="feedback-email_field">Ваш e-mail:</label>
+    <input class="feedback-email" type="email" name="feedback-email" id="feedback-email_field" placeholder="Для отправк ответа">
+    <label class="feedback-form-title feedback-form-title_text" for="feedback-text-field">Текст письма:</label>
+    <textarea class="feedback-text" name="feedback-text" rows="6" id="feedback-text-field" placeholder="В свободной форме"></textarea>
+    <button class="btn-modal-feedback" type="submit" title="Отправить">Отправить</button>
+  </form>
+</div><!--/Форма обратной связи-->
 	<script src="js/script.min.js"></script>
   </body>
 </html>
