@@ -16,40 +16,35 @@
 				</div>
 				<nav class="main-navigation">
 					<ul class="main-nav">
-						<li class="border-li-one"><a class="border-li-one-page" href="#">Студия</a></li>
-						<li class="border-li-two"><a class="border-li-one-page" href="#">Клиенты</a></li>
-						<li class="border-li-tree"><a class="border-li-one-page" href="#">Магазин</a></li>
-            <li class="border-li-tree"><a class="border-li-one-page" href="#">Контакты</a></li>
+						<li class="border-li-studio"><a class="border-li-studio_link" href="#">Студия</a></li>
+						<li class="border-li-customers"><a class="border-li-customers_link" href="#">Клиенты</a></li>
+						<li class="border-li-magazine"><a class="border-li-magazine_link" href="#">Магазин</a></li>
+            <li class="border-li-contacts"><a class="border-li-contacts_link" href="#">Контакты</a></li>
+            <li class="border-li-basket"><a class="border-li-basket_link" href="#">Корзина</a></li>
 					</ul>
 				</nav>
-<!--Модальная Форма корзины-->
-				<div class="user-block">
-					<div class="user-block_basket">
-						<a class="basket-link" href="#">Корзина</a>
-          </div><!--/Модальная Форма корзины-->
-			  </div>
-      </div><!--/Блок шапки-->
-      <div class="">
-        <h2 class="">Магазин готовых шаблонов</h2>
+      <!--/Блок шапки-->
+      <h2 class="">Магазин готовых шаблонов</h2>
       </div>
 		</header>
 <!--Содержание основного блока-->
 		<main class="container-forms">
       <div class="forms">
 <!--Блок выбора шаблонов - фильтр-->
-    		<div class="selection-form">
-    			<form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
-    				<div class="price-form range-filter">
+    		<div class="selection-forms">
+    			<form class="selection-forms_elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+            <span class="form-title">Стоимость:</span>
+            <div class="price-form range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 50%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
     					<div class="price-controls">
-    						<label class="min-price choice">Стоимость:<input type="text" name="min-price" value="0"> руб.</label>
-    						<label class="max-price choice">- <input  type="text" name="max-price" value="15000"> руб.</label>
-    					</div>
-    					<div class="range-controls">
-    						<div class="scale">
-    							<div class="bar" style="margin-left: 20%; width: 50%"></div>
-    						</div>
-    						<div class="toggle toggle-min"></div>
-    						<div class="toggle toggle-max"></div>
+    						<label class="min-price choice">от<input type="text" name="min-price" value="0"> руб.</label>
+    						<label class="max-price choice">до <input  type="text" name="max-price" value="15000"> руб.</label>
     					</div>
     				</div>
     				<div class="grid-catalog"><!--Сетка-->
@@ -70,19 +65,21 @@
     						<input type="checkbox" name="check-choko" id="check5"><label class="specialty-item_chek" for="check5">Корзина</label>
     					</section>
     				</div><!--/Особенности-->
-    				<button class="btn-apply" type="submit" title="Показать">Показать</button>
+    				<button class="btn-apply_form" type="submit" title="Показать">Показать</button>
     			</form>
     		</div><!--/Блок выбора шаблонов-->
   <!--Блок отсортированных шаблонов-->
         <div class="selected-forms">
-          <form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+          <form class="selected-forms_elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
             <div class="sorting">
-              <label class="choice" for="sorting">Сортировка:</label><br>
-              <select name="sorting" id="sorting">
-                <option selected>по цене</option>
-                <option>по типу</option>
-                <option>по названию</option>
-              </select>
+              <span class="sorting-title">Сортировка:</span>
+              <ul class="sorting-items">
+                <li class="sorting-item">по цене</li>
+                <li class="sorting-item">по типу</li>
+                <li class="sorting-item">по названию</li>
+                <li class="sorting-item"><a class="sorting-item_link" href="#">link</a></li>
+                <li class="sorting-item"><a class="sorting-item_link" href="#">link</a></li>
+              </ul>
             </div>
           </form>
           <div class="selected-items">
@@ -95,10 +92,10 @@
               <div class="selected-item_img">
                 <img src="img/img-sedona.jpg" width="360" height="756" alt="Иконка Седоны">
               </div>
-              <section class="">
-                <h4>Sedona</h4>
+              <section class="selected-item_visually-hidden">
+                <h4 class="selected-item_hidden_title">Sedona</h4>
                 <span>Информационный сайт для туристов</span>
-                <button>9 900 руб.</button>
+                <button class="selected-item_hidden_cost">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -110,10 +107,10 @@
               <div class="selected-item_img">
                 <img src="img/img-pink.jpg" width="360" height="756" alt="Иконка Пинк">
               </div>
-              <section class="">
-                <h4>Sedona</h4>
-                <span>Информационный сайт для туристов</span>
-                <button>9 900 руб.</button>
+              <section class="selected-item_visually-hidden">
+                <h4 class="selected-item_hidden_title">Pink app</h4>
+                <span class="selected-item_hidden_inform">Продуктовый лендинг приложения для IOS и Android</span>
+                <button class="selected-item_hidden_cost">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -125,10 +122,10 @@
               <div class="selected-item_img">
                 <img src="img/img-barbershop.jpg" width="360" height="756" alt="Иконка Барбершопа">
               </div>
-              <section class="">
-                <h4>Sedona</h4>
-                <span>Информационный сайт для туристов</span>
-                <button>9 900 руб.</button>
+              <section class="selected-item_visually-hidden">
+                <h4 class="selected-item_hidden_title">Barbershop</h4>
+                <span class="selected-item_hidden_inform">Сайт салоны красоты. Для мужчин, да.</span>
+                <button class="selected-item_hidden_cost">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -140,10 +137,10 @@
               <div class="selected-item_img">
                 <img src="img/img-mishka.jpg" width="360" height="756" alt="Иконка Мишки">
               </div>
-              <section class="">
-                <h4>Sedona</h4>
-                <span>Информационный сайт для туристов</span>
-                <button>9 900 руб.</button>
+              <section class="selected-item_visually-hidden">
+                <h4 class="selected-item_hidden_title">Mishka</h4>
+                <span class="selected-item_hidden_inform">Информационный сайт для туристовИнтернет-магазин вязаных игрушек</span>
+                <button class="selected-item_hidden_cost">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -155,10 +152,10 @@
               <div class="selected-item_img">
                 <img src="img/img-aplus.jpg" width="360" height="756" alt="Иконка Учебы">
               </div>
-              <section class="">
-                <h4>Sedona</h4>
-                <span>Информационный сайт для туристов</span>
-                <button>9 900 руб.</button>
+              <section class="selected-item_visually-hidden">
+                <h4 class="selected-item_hidden_title">A plus</h4>
+                <span class="selected-item_hidden_inform">Лендинг курсов повышения квалификации</span>
+                <button class="selected-item_hidden_cost">9 900 руб.</button>
               </section>
             </section>
             <section class="selected-item">
@@ -170,32 +167,31 @@
               <div class="selected-item_img">
                 <img src="img/img-kvast.jpg" width="360" height="756" alt="Иконка Квас">
               </div>
-              <section class="">
-                <h4>Sedona</h4>
-                <span>Информационный сайт для туристов</span>
-                <button>9 900 руб.</button>
+              <section class="selected-item_visually-hidden">
+                <h4 class="selected-item_hidden_title">Кваст</h4>
+                <span class="selected-item_hidden_inform">Промо-сайт производителя крафтового кваса</span>
+                <button class="selected-item_hidden_cost">9 900 руб.</button>
               </section>
             </section>
           </div>
-          <ul class="pages-ices">
-            <li><a class="prev disabled" href="#prev">Назад</a></li>
-            <li><a class="active-page" href="#">1</a></li>
-            <li><a class="hover" href="#">2</a></li>
-            <li><a class="hover" href="#">3</a></li>
-            <li><a class="next" href="#next">Следующая</a></li>
+          <ul class="selected-items_pages">
+            <li><a class="selected-items_page active-page" href="#">1</a></li>
+            <li><a class="selected-items_page" href="#">2</a></li>
+            <li><a class="selected-items_page" href="#">3</a></li>
+            <li><a class="selected-items_page page_next" href="#next">Следующая</a></li>
           </ul>
       </div>
     </div>
     </main>
 <!--Блок проезда-адреса-->
 		<div class="driving-address container-map" id="yandex-map">
-			<div class="driving">
+			<section class="driving">
 				<span class="Name-company">NЁRDS DESIGN STUDIO</span><br>
         <span class="adds">191186, Санкт-Петербург<br>
                   ул. Б. Конюшенная, д. 19/8</span><br>
         <span class="Tel">тел. +7 (812) 275-75-75</span><br>
 				<a class="btn-feedback" href="./form_feedback.html">Напиши нам</a>
-			</div>
+			</section>
 		</div><!--/Блок проезда-адреса-->
 <!--Блок подвала-->
 		<footer>
@@ -212,6 +208,12 @@
 			</div>
 		</footer><!--/Блок подвала-->
 <!--Модальные формы-->
+<!--Модальная Форма корзины-->
+	<div class="user-block">
+		<div class="user-block_basket">
+			<a class="basket-link" href="#">Корзина</a>
+    </div><!--/Модальная Форма корзины-->
+  </div>
 <!--Модальная Форма обратной связи-->
 	<script src="js/script.min.js"></script>
   </body>
