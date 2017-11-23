@@ -1,0 +1,524 @@
+body {
+  margin: 0px;
+  padding: 0px;
+
+	min-width: 1200px;
+  font-family: "Roboto", "Tahoma", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+  color: #000000;
+	/*background-color: #f6f6f6;*/
+}
+a {
+  text-decoration: none;
+}
+.main-nav,
+.description-about_orders_items,
+.sorting-items,
+.selected-items_pages {
+  list-style: none;
+}
+/*--ШАПКА--*/
+.main-header {
+  background-color: #eeeeee;
+}
+.main-header-wrapper {
+  background-color: #eeeeee;
+}
+.main-nav_link {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+.main-nav_link:hover {
+  color: #fb565a;
+}
+.main-nav_link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+.main-header_title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+/*-- ФОРМА СЛАЙДА --*/
+.about-sliders {
+  background-color: #eeeeee;
+}
+.about-slider_title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+.about-slider_about {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+.about-slider_btn {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #fb565a;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+.about-slider_btn:hover {
+  background-color: #e74246;
+}
+.about-slider_btn:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+.about-slider-1_img {
+  background-image: url("../img/slide1.png");
+  background-position: 300px 0;
+  background-repeat: no-repeat;
+}
+.about-slider-2_img {
+  background-image: url("../img/slide2.png");
+  background-position: 300px 0;
+  background-repeat: no-repeat;
+}
+.about-slider-3_img {
+  background-image: url("../img/slide3.png");
+  background-position: 300px 0;
+  background-repeat: no-repeat;
+}
+/*-- БЛОК ПРОМО АКЦИИ --*/
+.promo {
+  background-color: #ffffff;
+}
+.promo-section_title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.promo-section_about {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+.promo_btn {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn-promo_red {
+  background-color: #fb565a;
+}
+.btn-promo_red:hover {
+  background-color: #e74246;
+}
+.btn-promo_red:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+.btn-promo_green {
+  background-color: #00ca74;
+}
+.btn-promo_green:hover {
+  background-color: #00bc6c;
+}
+.btn-promo_green:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}
+.btn-promo_yellow {
+  background-color: #efc84a;
+}
+.btn-promo_yellow:hover {
+  background-color: #eab534;
+}
+.btn-promo_yellow:active {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
+}
+/*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
+.description {
+  background-color: #ffffff;
+}
+.description-about-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+.description-about-mission {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+.description-about-orders {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.description-about_order_item {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+.description-statistics-about {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.description-statistics-number_percent {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+.description-statistics-number_name {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283136;
+}
+/*-- БЛОК ПОРТФОЛИО ВЫПОЛНЕННЫХ САЙТОВ --*/
+.portfolio {
+  background-color: #ffffff;
+}
+/*-- БЛОК ПРОЕЗДА АДРЕСА --*/
+.driving {
+  background-color: #e9e5dc;
+}
+.container-map {
+  background-image: url("../img/map.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.driving-address {
+  width: 500px;
+  background-color: #ffffff;
+}
+.driving-address_title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.driving-address_adds {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+.driving-address_Tel {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+.driving-address_btn {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+.driving-address_btn_red {
+  background-color: #fb565a;
+}
+/*--СОДЕРЖАНИЕ ОСНОВНОГО БЛОКА КАТАЛОГА--*/
+.container-forms,
+.forms {
+  background-color: #ffffff;
+}
+/*БЛОК ВЫБОРА ШАБЛОНОВ - ФИЛЬТР*/
+.price-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+.min-price,
+.max-price {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #283136;
+  text-transform: uppercase;
+}
+.price-controls input {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #283136;
+  background-color: #eeeeee;
+}
+.grid-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+.grid-item_label {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+}
+.specialty-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+.specialty-item_chek {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+}
+.btn-apply_form {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+.btn-apply_form:hover {
+  background-color: #dfdfdf;
+}
+.btn-apply_form:active {
+background-color: #d5d5d5;
+color: rgba(0, 0, 0, 0.5);
+}
+/*--БЛОК ОСОРТИРОВАННЫХ ШАБЛОНОВ--*/
+.selected-forms,
+.selected-forms_elements,
+.selected-items {
+  background-color: #ffffff;
+}
+.sorting-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.sorting-item_link {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.sorting-item_price_active {
+  color: rgb(0, 0, 0);
+}
+.sorting-item_type_sleep,
+.sorting-item_name_sleep {
+  color: rgba(0, 0, 0, 0.3);
+}
+.sorting-item_price_active:hover,
+.sorting-item_type_sleep:hover,
+.sorting-item_name_sleep:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.sorting-item_price_active:active,
+.sorting-item_type_sleep:active,
+.sorting-item_name_sleep:active {
+  color: rgb(0, 0, 0);
+}
+.selected-item_slider {
+  height: 50px;
+  background-color: rgba(77, 77, 77, 0.1);
+  cursor: pointer;
+}
+.selected-item:hover .selected-item_slider {
+  background-color: rgb(77, 77, 77);
+}
+.selected-item_img {
+  cursor: pointer;
+}
+.selected-item_visually-hidden {
+  background-color: #eeeeee;
+}
+.selected-item_hidden_title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+.selected-item_hidden_inform {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+.selected-item_hidden_cost {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+.selected-items_li {
+  display: inline-block;
+}
+.selected-items_page {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+/*.selected-items_page_block {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: middle;
+}*/
+/*.page_next {
+  display: block;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+}*/
+/*-- ПОДВАЛ --*/
+.footer,
+.footer-social,
+.footer-contacts
+ {
+  background-color: #ffffff;
+}
+.social-btn {
+  text-align: center;
+}
+.social-btn:hover,
+.social-btn:focus {
+  text-decoration: none;
+}
+.footer-contacts_title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer-contacts_discount {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+}
+/*-- КАРТА И ОВЕРЛЭЙ ОБРАТНОЙ СВЯЗИ--*/
+
+/*-- ОКНО ОБРАТНОЙ СВЯЗИ--*/
+.modal-feedback,
+.feedback-form {
+  background-color: #ffffff;
+}
+.modal-feedback_title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+.feedback-form-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+.feedback_input {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.5);
+  border: 2px solid rgb(215, 220, 222);
+}
+.feedback_input:hover {
+  color: rgba(68, 68, 68, 0.5);
+  border: 2px solid rgb(180, 185, 187);
+}
+.feedback_input:focus {
+  color: rgba(68, 68, 68);
+  border: 2px solid rgb(0, 0, 0);
+}/*e74246 цвет невалидное значение*/
+.feedback-text {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.5);
+}
+.modal-feedback_btn {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(251, 86, 90);
+  border: none;
+}

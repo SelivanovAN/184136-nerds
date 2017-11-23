@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
 <!--Блок шапки-->
@@ -16,15 +17,15 @@
 				</div>
 				<nav class="main-navigation">
 					<ul class="main-nav">
-						<li class="border-li-studio"><a class="border-li-studio_link" href="#">Студия</a></li>
-						<li class="border-li-customers"><a class="border-li-customers_link" href="#">Клиенты</a></li>
-						<li class="border-li-magazine"><a class="border-li-magazine_link" href="#">Магазин</a></li>
-            <li class="border-li-contacts"><a class="border-li-contacts_link" href="#">Контакты</a></li>
-            <li class="border-li-basket"><a class="border-li-basket_link" href="#">Корзина</a></li>
+						<li class="main-nav_li main-nav-studio"><a class="main-nav_link main-nav-studio_link" href="#">Студия</a></li>
+						<li class="main-nav_li main-nav-customers"><a class="main-nav_link main-nav-customers_link" href="#">Клиенты</a></li>
+						<li class="main-nav_li main-nav-magazine"><a class="main-nav_link main-nav-magazine_link" href="#">Магазин</a></li>
+            <li class="main-nav_li main-nav-contacts"><a class="main-nav_link main-nav-contacts_link" href="#">Контакты</a></li>
+            <li class="main-nav_li main-nav-basket"><a class="main-nav_link main-nav-basket_link" href="#">Корзина</a></li>
 					</ul>
 				</nav>
       <!--/Блок шапки-->
-      <h2 class="">Магазин готовых шаблонов</h2>
+      <h2 class="main-header_title">Магазин готовых шаблонов</h2>
       </div>
 		</header>
 <!--Содержание основного блока-->
@@ -33,7 +34,7 @@
 <!--Блок выбора шаблонов - фильтр-->
     		<div class="selection-forms">
     			<form class="selection-forms_elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
-            <span class="form-title">Стоимость:</span>
+            <span class="price-title">Стоимость:</span>
             <div class="price-form range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -74,11 +75,11 @@
             <div class="sorting">
               <span class="sorting-title">Сортировка:</span>
               <ul class="sorting-items">
-                <li class="sorting-item">по цене</li>
-                <li class="sorting-item">по типу</li>
-                <li class="sorting-item">по названию</li>
-                <li class="sorting-item"><a class="sorting-item_link" href="#">link</a></li>
-                <li class="sorting-item"><a class="sorting-item_link" href="#">link</a></li>
+                <li class="sorting-item"><a class="sorting-item_link sorting-item_price_active">по цене</a></li>
+                <li class="sorting-item"><a class="sorting-item_link sorting-item_type_sleep">по типу</a></li>
+                <li class="sorting-item"><a class="sorting-item_link sorting-item_name_sleep">по названию</a></li>
+                <li class="sorting-item"><a class="sorting-item_up" href="#">link</a></li>
+                <li class="sorting-item"><a class="sorting-item_down" href="#">link</a></li>
               </ul>
             </div>
           </form>
@@ -94,7 +95,7 @@
               </div>
               <section class="selected-item_visually-hidden">
                 <h4 class="selected-item_hidden_title">Sedona</h4>
-                <span>Информационный сайт для туристов</span>
+                <span class="selected-item_hidden_inform">Информационный сайт для туристов</span>
                 <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
@@ -175,26 +176,26 @@
             </section>
           </div>
           <ul class="selected-items_pages">
-            <li><a class="selected-items_page active-page" href="#">1</a></li>
-            <li><a class="selected-items_page" href="#">2</a></li>
-            <li><a class="selected-items_page" href="#">3</a></li>
-            <li><a class="selected-items_page page_next" href="#next">Следующая</a></li>
+            <li class="selected-items_li"><a class="selected-items_page selected-items_page_block active-page" href="#">1</a></li>
+            <li class="selected-items_li"><a class="selected-items_page selected-items_page_block" href="#">2</a></li>
+            <li class="selected-items_li"><a class="selected-items_page selected-items_page_block" href="#">3</a></li>
+            <li class="selected-items_li"><a class="selected-items_page page_next" href="#next">Следующая</a></li>
           </ul>
       </div>
     </div>
     </main>
 <!--Блок проезда-адреса-->
-		<div class="driving-address container-map" id="yandex-map">
-			<section class="driving">
-				<span class="Name-company">NЁRDS DESIGN STUDIO</span><br>
-        <span class="adds">191186, Санкт-Петербург<br>
+		<div class="driving container-map" id="yandex-map">
+      <section class="driving-address">
+				<span class="driving-address_title">NЁRDS DESIGN STUDIO</span><br>
+        <span class="driving-address_adds">191186, Санкт-Петербург<br>
                   ул. Б. Конюшенная, д. 19/8</span><br>
-        <span class="Tel">тел. +7 (812) 275-75-75</span><br>
-				<a class="btn-feedback" href="./form_feedback.html">Напиши нам</a>
+        <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span><br>
+				<a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напиши нам</a>
 			</section>
 		</div><!--/Блок проезда-адреса-->
 <!--Блок подвала-->
-		<footer>
+		<footer class="footer">
 			<div class="container clearfix">
 				<section class="footer-social">
           <a class="social-btn social-btn-vk" href="https://vk.com" aria-label="Вконтакте">Вконтакте</a>
@@ -202,8 +203,8 @@
 					<a class="social-btn social-btn-inst" href="https://instagram.com" aria-label="Инстаграм">Инстаграм</a>
 				</section>
 				<section class="footer-contacts">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+          <b class="footer-contacts_title">Давайте дружить, это выгодно!</b>
+          <p class="footer-contacts_discount">Скидка 10% для друзей из социальных сетей</p>
 				</section>
 			</div>
 		</footer><!--/Блок подвала-->
@@ -216,16 +217,16 @@
 </div>
 <!--Модальная Форма обратной связи-->
 <div class="modal-feedback visually-hidden">
-  <button class="btn-modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
-  <h3>Напишите нам</h3>
+  <button class="modal-feedback-btn_close" type="button" title="Закрыть">Закрыть</button>
+  <h3 class="modal-feedback_title">Напишите нам</h3>
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
     <label class="feedback-form-title feedback-form-title_name" for="feedback-name_field">Ваше имя:</label>
-    <input class="feedback-name" type="text" name="feedback-name" id="feedback-name_field" placeholder="Представьтесь, пожалуйста">
+    <input class="feedback_input feedback-name" type="text" name="feedback-name" id="feedback-name_field" placeholder="Представьтесь, пожалуйста">
     <label class="feedback-form-title feedback-form-title_email" for="feedback-email_field">Ваш e-mail:</label>
-    <input class="feedback-email" type="email" name="feedback-email" id="feedback-email_field" placeholder="Для отправки ответа">
+    <input class="feedback_input feedback-email" type="email" name="feedback-email" id="feedback-email_field" placeholder="Для отправки ответа">
     <label class="feedback-form-title feedback-form-title_text" for="feedback-text-field">Текст письма:</label>
     <textarea class="feedback-text" name="feedback-text" rows="6" id="feedback-text-field" placeholder="В свободной форме"></textarea>
-    <button class="btn-modal-feedback" type="submit" title="Отправить">Отправить</button>
+    <button class="modal-feedback_btn" type="submit" title="Отправить">Отправить</button>
   </form>
 </div><!--/Форма обратной связи-->
 	<script src="js/script.min.js"></script>
