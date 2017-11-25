@@ -1,8 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-
-	min-width: 1200px;
+	min-width: 1440px;
   font-family: "Roboto", "Tahoma", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -21,6 +20,8 @@ a {
 }
 /*--ШАПКА--*/
 .main-header {
+  width: 1160px;
+  margin: 0 auto;
   background-color: #eeeeee;
 }
 .main-header-wrapper {
@@ -39,6 +40,7 @@ a {
 .main-nav_link:active {
   color: #000000;
   opacity: 0.3;
+  border-bottom: 2px solid #fb565a;
 }
 .main-header_title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -50,6 +52,9 @@ a {
 /*-- ФОРМА СЛАЙДА --*/
 .about-sliders {
   background-color: #eeeeee;
+}
+.about-slider {
+  height: 413px;
 }
 .about-slider_title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -100,7 +105,12 @@ a {
   background-repeat: no-repeat;
 }
 /*-- БЛОК ПРОМО АКЦИИ --*/
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
 .promo {
+  display: flex;
   background-color: #ffffff;
 }
 .promo-section_title {
@@ -268,6 +278,13 @@ a {
 .forms {
   background-color: #ffffff;
 }
+.forms {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: flex;
+}
 /*БЛОК ВЫБОРА ШАБЛОНОВ - ФИЛЬТР*/
 .price-title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -345,12 +362,23 @@ color: rgba(0, 0, 0, 0.5);
 .selected-items {
   background-color: #ffffff;
 }
+.sorting {
+  display: flex;
+  align-items: baseline;
+}
 .sorting-title {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
+}
+.sorting-items {
+  padding: 0px;
+  margin: 0px;
+}
+.sorting-item {
+  display: inline-block;
 }
 .sorting-item_link {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -375,6 +403,20 @@ color: rgba(0, 0, 0, 0.5);
 .sorting-item_type_sleep:active,
 .sorting-item_name_sleep:active {
   color: rgb(0, 0, 0);
+}
+
+.selection-forms_elements {
+  width: 260px;
+}
+.selected-forms_elements {
+  width: 760px;
+}
+.selected-items {
+  width: 760px;
+  display: flex;
+}
+.selected-item {
+  width: 360px;
 }
 .selected-item_slider {
   height: 50px;
@@ -424,9 +466,13 @@ color: rgba(0, 0, 0, 0.5);
   background-color: #d7373b;
   cursor: pointer;
 }
+.selected-items_pages {
+  display: flex;
+  align-items: center;
+}/*
 .selected-items_li {
   display: inline-block;
-}
+}*/
 .selected-items_page {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
@@ -461,6 +507,10 @@ color: rgba(0, 0, 0, 0.5);
   vertical-align: middle;
 }*/
 /*-- ПОДВАЛ --*/
+.footer {
+  width: 1160px;
+  margin: 0 auto;
+}
 .footer,
 .footer-social,
 .footer-contacts
