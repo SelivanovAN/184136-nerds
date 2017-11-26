@@ -25,8 +25,8 @@
 					</ul>
 				</nav>
       <!--/Блок шапки-->
-      <h2 class="main-header_title">Магазин готовых шаблонов</h2>
       </div>
+      <h2 class="main-header_title">Магазин готовых шаблонов</h2>
 		</header>
 <!--Содержание основного блока-->
 		<main class="container-forms">
@@ -50,20 +50,20 @@
     				</div>
     				<div class="grid-catalog"><!--Сетка-->
     					<span class="grid-title">Сетка:</span><br>
-    					<section class="grid-item">
-    						<input type="radio" name="fatness-ice" id="adaptive-field" value="adaptive" checked><label class="grid-item_label" for="adaptive-field">Адаптивная</label>
-    						<input type="radio" name="fatness-ice" id="fix-field" value="fix"><label class="grid-item_label" for="fix-field">Фиксированная</label>
-    						<input type="radio" name="fatness-ice" id="rubber-field" value="rubber"><label class="grid-item_label" for="rubber-field">Резиновая</label>
+    					<section class="grid-items">
+    						<label class="grid-item_label" for="adaptive-field"><input type="radio" name="fatness-ice" id="adaptive-field" value="adaptive" checked>Адаптивная</label>
+    						<label class="grid-item_label" for="fix-field"><input type="radio" name="fatness-ice" id="fix-field" value="fix">Фиксированная</label>
+    						<label class="grid-item_label" for="rubber-field"><input type="radio" name="fatness-ice" id="rubber-field" value="rubber">Резиновая</label>
     					</section>
     				</div><!--/Сетка-->
     				<div class="specialty-catalog"><!--Особенности-->
     					<span class="specialty-title">Особенности:</span><br>
     					<section class="specialty-item">
-    						<input type="checkbox" name="specialty" id="slider-field" checked><label class="specialty-item_chek specialty-item_chek_visually-hidden" for="slider-field">Слайдер</label>
-    						<input type="checkbox" name="specialty" id="privilege-field" ><label class="specialty-item_chek specialty-item_chek_visually-hidden" for="privilege-field">Блок преимуществ</label>
-    						<input type="checkbox" name="specialty" id="news-field" checked><label class="specialty-item_chek specialty-item_chek_visually-hidden" for="news-field">Новости</label>
-    						<input type="checkbox" name="specialty" id="gallery-field"><label class="specialty-item_chek specialty-item_chek_visually-hidden" for="gallery-field">Галерея</label>
-    						<input type="checkbox" name="specialty" id="basket-field"><label class="specialty-item_chek specialty-item_chek_visually-hidden" for="basket-field">Корзина</label>
+    						<label class="specialty-item_chek specialty-item_chek_visually-hidden" for="slider-field"><input type="checkbox" name="specialty" id="slider-field" checked>Слайдер</label>
+    						<label class="specialty-item_chek specialty-item_chek_visually-hidden" for="privilege-field"><input type="checkbox" name="specialty" id="privilege-field" >Блок преимуществ</label>
+    						<label class="specialty-item_chek specialty-item_chek_visually-hidden" for="news-field"><input type="checkbox" name="specialty" id="news-field" checked>Новости</label>
+    						<label class="specialty-item_chek specialty-item_chek_visually-hidden" for="gallery-field"><input type="checkbox" name="specialty" id="gallery-field">Галерея</label>
+    						<label class="specialty-item_chek specialty-item_chek_visually-hidden" for="basket-field"><input type="checkbox" name="specialty" id="basket-field">Корзина</label>
     					</section>
     				</div><!--/Особенности-->
     				<button class="btn-apply_form" type="submit" title="Показать">Показать</button>
@@ -186,13 +186,15 @@
     </main>
 <!--Блок проезда-адреса-->
 		<div class="driving container-map" id="yandex-map">
-      <section class="driving-address">
-				<span class="driving-address_title">NЁRDS DESIGN STUDIO</span><br>
-        <span class="driving-address_adds">191186, Санкт-Петербург<br>
-                  ул. Б. Конюшенная, д. 19/8</span><br>
-        <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span><br>
-				<a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напиши нам</a>
-			</section>
+      <div class="driving-wrapper">
+  			<section class="driving-address">
+  				<span class="driving-address_title">NЁRDS DESIGN STUDIO</span><br>
+          <span class="driving-address_adds">191186, Санкт-Петербург<br>
+                    ул. Б. Конюшенная, д. 19/8</span><br>
+          <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span><br>
+  				<a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напиши нам</a>
+  			</section>
+      </div>
 		</div><!--/Блок проезда-адреса-->
 <!--Блок подвала-->
 		<footer class="footer">

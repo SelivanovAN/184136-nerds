@@ -56,7 +56,7 @@
 <!--Содержание основного блока-->
 		<main class="container">
 <!--Блок промо акции-->
-			<div class="promo">
+			<div class="promo-wrapper">
 				<section class="promo-section promo-site">
           <div>
             <img src="img/illustration-red.png" width="300" height="146" alt="Иконка промо сайтов">
@@ -84,36 +84,38 @@
 			</div><!--/Блок промо акции-->
 <!--Блок описания компании-->
 			<div class="description">
-        <section class="description-about">
-          <b class="description-about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-          <p class="description-about-mission">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <span class="description-about-orders">Выполняем заказы на разработку:</span>
-          <ul class="description-about_orders_items">
-            <li class="description-about_order_item">Веб-&mdash;сайтов любой сложности</li>
-            <li class="description-about_order_item">Мобильных приложений для IOS и Android</li>
-            <li class="description-about_order_item">Слайдшоу и видео для корпоративных призентаций</li>
-          </ul>
-        </section>
-				<section class="description-statistics">
-          <div class="description-statistics-img_wrapper">
-            <img src="img/nerds-illustration.png" width="360" height="208" alt="Иконка статистики">
-          </div>
-					<span class="description-statistics-about">С 2004 года любим точность во всем:</span>
-          <section class="description-statistics-numbers"><!--А можно тут через список сделать а не через див-->
-            <div class="description-statistics-number">
-              <span class="description-statistics-number_percent">146<sup>%</sup></span>
-              <span class="description-statistics-number_name">Уровень самоотдачи</span>
-            </div>
-            <div class="description-statistics-number">
-              <span class="description-statistics-number_percent">100<sup>%</sup></span>
-              <span class="description-statistics-number_name">Соблюдение сроков</span>
-            </div>
-            <div class="description-statistics-number">
-              <span class="description-statistics-number_percent">50<sup>%</sup></span>
-              <span class="description-statistics-number_name">Минимальная предоплата</span>
-            </div>
+        <div class="description-wrapper">
+          <section class="description-about">
+            <b class="description-about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+            <p class="description-about-mission">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <span class="description-about-orders">Выполняем заказы на разработку:</span>
+            <ul class="description-about_orders_items">
+              <li class="description-about_order_item">Веб-&mdash;сайтов любой сложности</li>
+              <li class="description-about_order_item">Мобильных приложений для IOS и Android</li>
+              <li class="description-about_order_item">Слайдшоу и видео для корпоративных призентаций</li>
+            </ul>
           </section>
-				</section>
+  				<section class="description-statistics">
+            <div class="description-statistics-img_wrapper">
+              <img src="img/nerds-illustration.png" width="360" height="208" alt="Иконка статистики">
+            </div>
+  					<span class="description-statistics-about">С 2004 года любим точность во всем:</span>
+            <section class="description-statistics-numbers"><!--А можно тут через список сделать а не через див-->
+              <div class="description-statistics-number">
+                <span class="description-statistics-number_percent">146<sup>%</sup></span>
+                <span class="description-statistics-number_name">Уровень самоотдачи</span>
+              </div>
+              <div class="description-statistics-number">
+                <span class="description-statistics-number_percent">100<sup>%</sup></span>
+                <span class="description-statistics-number_name">Соблюдение сроков</span>
+              </div>
+              <div class="description-statistics-number">
+                <span class="description-statistics-number_percent">50<sup>%</sup></span>
+                <span class="description-statistics-number_name">Минимальная предоплата</span>
+              </div>
+            </section>
+  				</section>
+        </div>
 			</div><!--/Блок описания компании-->
 <!--Блок портфолио выполненных сайтов-->
       <div class="portfolio">
@@ -135,13 +137,15 @@
     </main>
 <!--Блок проезда-адреса-->
 		<div class="driving container-map" id="yandex-map">
-			<section class="driving-address">
-				<span class="driving-address_title">NЁRDS DESIGN STUDIO</span><br>
-        <span class="driving-address_adds">191186, Санкт-Петербург<br>
-                  ул. Б. Конюшенная, д. 19/8</span><br>
-        <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span><br>
-				<a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напиши нам</a>
-			</section>
+      <div class="driving-wrapper">
+  			<section class="driving-address">
+  				<span class="driving-address_title">NЁRDS DESIGN STUDIO</span><br>
+          <span class="driving-address_adds">191186, Санкт-Петербург<br>
+                    ул. Б. Конюшенная, д. 19/8</span><br>
+          <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span><br>
+  				<a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напиши нам</a>
+  			</section>
+      </div>
 		</div><!--/Блок проезда-адреса-->
 <!--Блок подвала-->
 		<footer class="footer">

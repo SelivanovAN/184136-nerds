@@ -20,12 +20,21 @@ a {
 }
 /*--ШАПКА--*/
 .main-header {
-  width: 1160px;
   margin: 0 auto;
   background-color: #eeeeee;
 }
 .main-header-wrapper {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #eeeeee;
+  display: flex;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
 }
 .main-nav_link {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -33,6 +42,13 @@ a {
   line-height: 30px;
   font-weight: 500;
   color: #000000;
+}
+.main-nav_li {
+  margin-right: 20px;
+}
+.main-nav_li:last-child {
+  padding-left: 500px;
+
 }
 .main-nav_link:hover {
   color: #fb565a;
@@ -48,12 +64,25 @@ a {
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+  width: 1160px;
+  padding-left: 200px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*-- ФОРМА СЛАЙДА --*/
 .about-sliders {
+  display: flex;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
   background-color: #eeeeee;
 }
 .about-slider {
+  width: 1160px;
   height: 413px;
 }
 .about-slider_title {
@@ -104,14 +133,30 @@ a {
   background-position: 300px 0;
   background-repeat: no-repeat;
 }
+.sliders-controls {
+  margin-left: auto;
+  margin-right: auto;
+}
 /*-- БЛОК ПРОМО АКЦИИ --*/
 .container {
-  width: 1160px;
+  width: 1440px;
   margin: 0 auto;
-}
-.promo {
   display: flex;
+  flex-wrap: wrap;
+}
+.promo-wrapper {
+  display: flex;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
   background-color: #ffffff;
+}
+.promo-section {
+  width: 300px;
+  margin-right: 100px;
 }
 .promo-section_title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -170,7 +215,23 @@ a {
 }
 /*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 .description {
+  width: 1440px;
   background-color: #ffffff;
+}
+.description-wrapper {
+  display: flex;
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  background-color: #ffffff;
+}
+.description-about {
+  width: 660px;
+  margin-right: 140px;
 }
 .description-about-title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -200,6 +261,12 @@ a {
   font-weight: 400;
   color: #283136;
 }
+.description-statistics {
+  width: 360px;
+}
+.description-statistics-numbers {
+  display: flex;
+}
 .description-statistics-about {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
@@ -223,7 +290,18 @@ a {
 }
 /*-- БЛОК ПОРТФОЛИО ВЫПОЛНЕННЫХ САЙТОВ --*/
 .portfolio {
+  width: 1440px;
   background-color: #ffffff;
+}
+.portfolio-catalog {
+  display: flex;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-around;
+  margin-bottom: 80px;
 }
 /*-- БЛОК ПРОЕЗДА АДРЕСА --*/
 .driving {
@@ -233,10 +311,19 @@ a {
   background-image: url("../img/map.png");
   background-position: 0 0;
   background-repeat: no-repeat;
+  min-height: 416px;
 }
 .driving-address {
-  width: 500px;
+  width: 320px;
   background-color: #ffffff;
+}
+.driving-wrapper {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
 }
 .driving-address_title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -319,6 +406,10 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
+.grid-items {
+  display: flex;
+  flex-direction: column;
+}
 .grid-item_label {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
@@ -333,6 +424,10 @@ a {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+.specialty-item {
+  display: flex;
+  flex-direction: column;
 }
 .specialty-item_chek {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -372,13 +467,17 @@ color: rgba(0, 0, 0, 0.5);
   line-height: 18px;
   font-weight: 700;
   color: #000000;
+  margin-right: 300px;
 }
 .sorting-items {
   padding: 0px;
   margin: 0px;
 }
+.sorting-items {
+  display: flex;
+}
 .sorting-item {
-  display: inline-block;
+  margin-right: 20px;
 }
 .sorting-item_link {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -408,15 +507,22 @@ color: rgba(0, 0, 0, 0.5);
 .selection-forms_elements {
   width: 260px;
 }
+.selected-forms {
+  margin-left: auto;
+}
 .selected-forms_elements {
   width: 760px;
 }
 .selected-items {
   width: 760px;
   display: flex;
+  flex-wrap: wrap;
 }
 .selected-item {
   width: 360px;
+}
+.selected-item:nth-child(even) {
+  margin-left: 40px;
 }
 .selected-item_slider {
   height: 50px;
@@ -469,10 +575,11 @@ color: rgba(0, 0, 0, 0.5);
 .selected-items_pages {
   display: flex;
   align-items: center;
-}/*
+  padding: 0px;
+}
 .selected-items_li {
-  display: inline-block;
-}*/
+  margin-right: 50px;
+}
 .selected-items_page {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
@@ -510,6 +617,10 @@ color: rgba(0, 0, 0, 0.5);
 .footer {
   width: 1160px;
   margin: 0 auto;
+  margin-top: 50px;
+}
+.container {
+  display: flex;
 }
 .footer,
 .footer-social,
@@ -523,6 +634,10 @@ color: rgba(0, 0, 0, 0.5);
 .social-btn:hover,
 .social-btn:focus {
   text-decoration: none;
+}
+.footer-social {
+  display: flex;
+  margin-right: 50px;
 }
 .footer-contacts_title {
   font-family: "Roboto", "Tahoma", sans-serif;
