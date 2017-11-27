@@ -40,13 +40,12 @@ img {
 }
 .main-navigation {
   display: flex;
-  flex-grow: 1;
 }
-.main-nav {
+.main-nav,
+.main-nav_login {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  align-items: center;
 }
 
 .main-nav_link {
@@ -59,16 +58,6 @@ img {
 }
 .main-nav_li {
   margin-right: 20px;
-}
-.main-navigation_basket {
-  font-family: "Roboto", "Tahoma", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #000000;
-  margin-left: auto;
-  display: block;
-  text-align: center;
 }
 /*
 .main-nav_li:last-child {
