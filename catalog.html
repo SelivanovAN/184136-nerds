@@ -26,7 +26,9 @@
 				</nav>
       <!--/Блок шапки-->
       </div>
-      <h2 class="main-header_title">Магазин готовых шаблонов</h2>
+      <div class="main-header_title_wrapper">
+        <h2 class="main-header_title">Магазин готовых шаблонов</h2>
+      </div>
 		</header>
 <!--Содержание основного блока-->
 		<main class="container-forms">
@@ -34,7 +36,23 @@
 <!--Блок выбора шаблонов - фильтр-->
     		<div class="selection-forms">
     			<form class="selection-forms_elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
-            <span class="price-title">Стоимость:</span>
+            <fieldset class="filter-price">
+              <legend class="filter-price-title">Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price choice">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price choice">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
+            <!--<span class="price-title">Стоимость:</span>
             <div class="price-form range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -47,7 +65,7 @@
     						<label class="min-price choice">от<input type="text" name="min-price" value="0"> руб.</label>
     						<label class="max-price choice">до <input  type="text" name="max-price" value="15000"> руб.</label>
     					</div>
-    				</div>
+    				</div>-->
     				<div class="grid-catalog"><!--Сетка-->
     					<span class="grid-title">Сетка:</span><br>
     					<section class="grid-items">

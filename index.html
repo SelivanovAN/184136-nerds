@@ -21,38 +21,42 @@
 						<li class="main-nav_li main-nav-customers"><a class="main-nav_link main-nav-customers_link" href="#">Клиенты</a></li>
 						<li class="main-nav_li main-nav-magazine"><a class="main-nav_link main-nav-magazine_link" href="./catalog.html">Магазин</a></li>
             <li class="main-nav_li main-nav-contacts"><a class="main-nav_link main-nav-contacts_link" href="#">Контакты</a></li>
-            <li class="main-nav_li main-nav-basket"><a class="main-nav_link main-nav-basket_link" href="#">Корзина</a></li>
 					</ul>
+          <a class="main-navigation_basket" href="#">Корзина</a>
 				</nav>
       </div>
-      <!--Формы слайда-->
-      <div class="about-sliders">
-        <div class="about-slider about-slider-1 about-slider-1_img" id="slide-one">
-          <b class="about-slider_title">Долго, дорого, скрупулезно</b>
-          <p class="about-slider_about">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="about-slider_btn about-more-learn_btn" href="#">Узнать больше</a>
+    </header><!--/Блок шапки-->
+<!--Формы слайда-->
+    <section class="slider">
+      <div class="slider-container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
-        <div class="about-slider about-slider-2 about-slider-2_img" id="slide-two">
-          <b class="about-slider_title">Любим математику как никто другой</b>
-          <p class="about-slider_about">Никакого креатива, только математические формулы  для расчета идеальных пропрорций</p>
-          <a class="about-slider_btn about-more-learn_btn" href="#">Узнать больше</a>
-        </div>
-        <div class="about-slider about-slider-3 about-slider-3_img" id="slide-three">
-          <b class="about-slider_title">Только ночь, только хардкор</b>
-          <p class="about-slider_about">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-          <a class="about-slider_btn about-more-learn_btn" href="#">Узнать больше</a>
-        </div>
-        <div class="sliders-controls">
-          <label for="btn-one-field"></label>
-          <input type="radio" name="slider" id="btn-one-field">
-      		<label for="btn-two-field"></label>
-          <input type="radio" name="slider" id="btn-two-field">
-      		<label for="btn-three-field"></label>
-          <input type="radio" name="slider" id="btn-three-field">
-      	</div>
-      </div><!--/Формы слайда-->
-      <!--/Блок шапки-->
-		</header>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3 class="slider_title">Долго, дорого,<br> скрупулезно</h3>
+            <p class="slider_about">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+            <a class="slider-item-btn slider_btn" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3 class="slider_title">Любим математику как никто другой</h3>
+            <p class="slider_about">Никакого креатива, только математические формулы  для расчета идеальных пропрорций</p>
+            <a class="slider-item-btn slider_btn" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3 class="slider_title">Только ночь, только хардкор</h3>
+            <p class="slider_about">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается</p>
+            <a class="slider-item-btn slider_btn" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+    </section><!--/Формы слайда-->
 <!--Содержание основного блока-->
 		<main class="container">
 <!--Блок промо акции-->
