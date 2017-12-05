@@ -725,10 +725,10 @@ img {
 .grid-item_radio + .grid-item_label::before {
   content: "";
   position: absolute;
+  box-sizing: border-box;
   width: 25px;
   height: 25px;
-  /*box-sizing: border-box;*/
-  border: 2px solid rgba(77, 77, 77, 0.4);
+  border: 5px solid rgba(77, 77, 77, 0.4);
   left: 0px;
   top: -6px;
   border-radius: 50%;
@@ -736,8 +736,8 @@ img {
 .grid-item_radio:checked + .grid-item_label::after {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   box-sizing: border-box;
   left: 8px;
   top: 2px;
@@ -745,13 +745,13 @@ img {
   background-color: rgba(77, 77, 77, 0.4);
 }
 .grid-item_radio:hover + .grid-item_label::before {
-  border: 2px solid rgba(77, 77, 77, 1);
+  border: 5px solid rgba(77, 77, 77, 1);
 }
 .grid-item_radio:checked:hover + .grid-item_label::after {
   background-color: rgba(77, 77, 77, 1);
 }
 .grid-item_radio:disabled + .grid-item_label::before {
-  border: 2px solid rgba(77, 77, 77, 0.1);
+  border: 5px solid rgba(77, 77, 77, 0.1);
 }
 .grid-item_radio:checked:disabled + .grid-item_label::after {
   background-color: rgba(77, 77, 77, 0.1);
@@ -793,34 +793,35 @@ img {
   left: 0px;
   top: -6px;
   border-radius: 3px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .specialty-item_checkbox:checked + .specialty-item_label::before {
   content: "";
   position: absolute;
   width: 26px;
   height: 24px;
-  left: 2px;
+  left: 0px;
   top: -4px;
   border-radius: 3px;
   border: none;
-  background: url("../img/checkbox-on.svg") 0 0 no-repeat;
-  fill-opacity: rgba(0, 0, 0, 0.4);
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;;
 }
 .specialty-item_checkbox:hover + .specialty-item_label::before {
-  border: 2px solid rgba(0, 0, 0, 1);
+  background-image: url("../img/checkbox-hover-off.png");
 }
 .specialty-item_checkbox:checked:hover + .specialty-item_label::before {
-  background-color: rgba(0, 0, 0, 1);
-}
-.specialty-item_checkbox:checked:hover + .specialty-item_label::before {
-  fill-opacity: 0.1;
+  left: 0px;
+  background-image: url("../img/checkbox-hover-on.png");
 }
 .specialty-item_checkbox:disabled + .specialty-item_label::before {
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  background-image: url("../img/checkbox-disabled-off.png");
 }
 .specialty-item_checkbox:checked:disabled + .specialty-item_label::before {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url("../img/checkbox-disabled-on.png");
 }
 .btn-apply_form {
   display: block;
@@ -1168,9 +1169,12 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   font-weight: 400;
   color: #444444;
 }
-/*-- КАРТА И ОВЕРЛЭЙ ОБРАТНОЙ СВЯЗИ--*/
+/*-- КАРТА, КОРЗИНА И ОВЕРЛЭЙ ОБРАТНОЙ СВЯЗИ--*/
 
 /*-- ОКНО ОБРАТНОЙ СВЯЗИ--*/
+.modal-feedback {
+  display: none;
+}
 .modal-feedback,
 .feedback-form {
   background-color: #ffffff;
