@@ -47,8 +47,8 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price choice">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price choice">до <input name="max-price" type="text" value="15000"></label>
+                  <label class="min-price choice">от <input class="min-price_input" name="min-price" type="text" value="0"></label>
+                  <label class="max-price choice">до <input class="max-price_input" name="max-price" type="text" value="15000"></label>
                 </div>
               </div>
             </fieldset>
@@ -77,7 +77,7 @@
         <div class="selected-forms">
           <form class="selected-forms_elements" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
             <div class="sorting">
-              <span class="sorting-title">Сортировка:</span>
+              <span class="sorting-title">Сортировать:</span>
               <ul class="sorting-items">
                 <li class="sorting-item"><a class="sorting-item_link sorting-item_price_active">по цене</a></li>
                 <li class="sorting-item"><a class="sorting-item_link sorting-item_type_sleep">по типу</a></li>
@@ -182,10 +182,12 @@
         <section class="driving-address">
           <span class="driving-address_title">NЁRDS DESIGN STUDIO</span>
           <span class="driving-address_adds">191186, Санкт-Петербург<br>
-                    ул. Б. Конюшенная, д. 19/8</span><br>
+                    ул. Б. Конюшенная, д. 19/8</span>
           <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span><br>
-          <a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напиши нам</a>
+          <a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напишите нам</a>
         </section>
+        <div class="driving-map_marker">
+        </div>
       </div>
     </div><!--/Блок проезда-адреса-->
 <!--Блок подвала-->

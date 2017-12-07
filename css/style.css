@@ -26,6 +26,7 @@ img {
 .main-header {
   margin: 0 auto;
   background-color: #eeeeee;
+  margin-bottom: 57px;
 }
 .main-header-wrapper {
   width: 1160px;
@@ -39,10 +40,11 @@ img {
   align-items: flex-end;
 }
 .header-logo {
-  margin-right: 200px;
+  margin-right: 202px;
 }
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   align-items: center;
 }
@@ -50,6 +52,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .main-nav_link {
@@ -62,7 +65,7 @@ img {
   border-bottom: 2px solid transparent;
 }
 .main-nav_li {
-  margin-right: 20px;
+  margin-right: 46px;
 }
 .main-navigation_basket {
   position: relative;
@@ -74,12 +77,13 @@ img {
   margin-left: auto;
   display: block;
   text-align: center;
-  padding-left: 41px;
+  padding-left: 39px;
+  text-transform: uppercase;
 }
 .main-navigation_basket::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 0px;
   width: 16px;
   height: 18px;
@@ -126,12 +130,12 @@ img {
   font-weight: 500;
   color: #000000;
   width: 1160px;
-  padding-left: 200px;
+  padding-left: 236px;
   padding-right: 20px;
   margin: 0px;
-  padding-bottom: 118px;
-  margin-bottom: 58px;
-  padding-top: 88px;
+  padding-bottom: 110px;
+  padding-top: 70px;
+
 }
 /*-- ФОРМА СЛАЙДА --*/
 .slider {
@@ -512,6 +516,7 @@ img {
 /*-- БЛОК ПРОЕЗДА АДРЕСА --*/
 .driving {
   background-color: #e9e5dc;
+  margin-top: 61px;
 }
 .container-map {
   width: 1440px;
@@ -542,7 +547,7 @@ img {
 }
 .driving-address_title {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -556,10 +561,11 @@ img {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+  margin-bottom: 18px;
 }
 .driving-address_Tel {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -576,11 +582,21 @@ img {
   border-radius: 3px;
   text-align: center;
   display: inline-block;
-  padding: 18px 45px;
+  padding: 16px 44px;
   vertical-align: middle;
 }
 .driving-address_btn_red {
   background-color: #fb565a;
+}
+.driving-map_marker {
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  top: 89px;
+  right: 269px;
+  background-image: url("../img/map-marker.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 /*--СОДЕРЖАНИЕ ОСНОВНОГО БЛОКА КАТАЛОГА--*/
 .container-forms,
@@ -603,7 +619,7 @@ img {
 }
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 46px;
 }
 .filter-price-title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -666,10 +682,10 @@ img {
   color: #283136;
   text-transform: uppercase;
 }
-.price-controls input {
+.price-controls .min-price_input,
+.price-controls .max-price_input {
   width: 80px;
-  padding: 8px 10px;
-  margin-left: 3px;
+  padding: 7px 0px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -692,7 +708,15 @@ img {
   color: #283136;
   text-transform: uppercase;
 }
-
+.min-price .min-price_input {
+  margin-left: 8px;
+}
+.max-price .max-price_input {
+  margin-left: 8px;
+}
+.grid-catalog {
+  margin-bottom: 41px;
+}
 .grid-title {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 18px;
@@ -716,8 +740,8 @@ img {
   line-height: 20px;
   font-weight: 400;
   color: #283136;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
 .grid-item_radio {
   display: none;
@@ -730,7 +754,7 @@ img {
   height: 25px;
   border: 5px solid rgba(77, 77, 77, 0.4);
   left: 0px;
-  top: -6px;
+  top: -2px;
   border-radius: 50%;
 }
 .grid-item_radio:checked + .grid-item_label::after {
@@ -740,7 +764,7 @@ img {
   height: 9px;
   box-sizing: border-box;
   left: 8px;
-  top: 2px;
+  top: 5px;
   border-radius: 100%;
   background-color: rgba(77, 77, 77, 0.4);
 }
@@ -774,8 +798,8 @@ img {
   cursor: pointer;
   user-select: none;
   padding-left: 36px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-top: 16px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -791,7 +815,7 @@ img {
   width: 23px;
   height: 23px;
   left: 0px;
-  top: -6px;
+  top: -2px;
   border-radius: 3px;
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
@@ -803,7 +827,7 @@ img {
   width: 26px;
   height: 24px;
   left: 0px;
-  top: -4px;
+  top: -2px;
   border-radius: 3px;
   border: none;
   background-image: url("../img/checkbox-on.png");
@@ -829,7 +853,7 @@ img {
   height: 50px;
   box-sizing: border-box;
   border-radius: 3px;
-  margin-top: 20px;
+  margin-top: 46px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -840,6 +864,7 @@ img {
   border: none;
   text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 .btn-apply_form:hover {
   background-color: #dfdfdf;
@@ -858,27 +883,37 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
 .sorting {
   display: flex;
   align-items: baseline;
-  margin-bottom: 49px;
+  margin-bottom: 55px;
 }
 .sorting-title {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 18px;
+  padding-top: 2px;
   font-weight: 700;
   color: #000000;
-  margin-right: 292px;
+  margin-right: 266px;
+  text-transform: uppercase;
 }
 .sorting-items {
   display: flex;
   align-items: center;
   padding: 0px;
   margin: 0px;
+  text-transform: uppercase;
+  line-height: 18px;
 }
-.sorting-item {
-  margin-right: 20px;
+.sorting-item:nth-child(1) {
+  margin-right: 25px;
+}
+.sorting-item:nth-child(2) {
+  margin-right: 26px;
 }
 .sorting-item:nth-child(3) {
-  margin-right: 90px;
+  margin-right: 49px;
+}
+.sorting-item:nth-child(4) {
+  margin-right: 17px;
 }
 .sorting-items .sorting-item:last-child {
   margin: 0px;
@@ -1001,7 +1036,7 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   color: #000000;
   text-transform: uppercase;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 .selected-item_hidden_inform {
   display: block;
@@ -1017,7 +1052,7 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   height: 50px;
   box-sizing: border-box;
   border-radius: 3px;
-  margin-top: 20px;
+  margin-top: 31px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -1043,9 +1078,12 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   display: flex;
   align-items: center;
   padding: 0px;
+  margin: 0px;
+  margin-top: 26px;
+  line-height: 18px;
 }
 .selected-items_li {
-  margin-right: 50px;
+  margin-right: 11px;
 }
 .selected-items_page {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -1062,7 +1100,7 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   vertical-align: middle;
   width: 50px;
   height: 50px;
-  padding-top: 14px;
+  padding-top: 16px;
   border-radius: 3px;
 }
 .active-page {
@@ -1092,28 +1130,15 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   vertical-align: middle;
   width: 260px;
   height: 50px;
-  padding-top: 14px;
+  padding-top: 16px;
   border-radius: 3px;
+  text-transform: uppercase;
 }
-/*.selected-items_page_block {
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
-  text-align: center;
-  vertical-align: middle;
-}*/
-/*.page_next {
-  display: block;
-  width: 150px;
-  text-align: center;
-  vertical-align: middle;
-}*/
 /*-- ПОДВАЛ --*/
 .footer {
   width: 1160px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 69px;
 }
 .container {
   display: flex;
@@ -1123,6 +1148,9 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
 .footer-contacts
  {
   background-color: #ffffff;
+}
+.footer-contacts {
+  padding-top: 5px;
 }
 .social-btn {
   font-size: 0px;
@@ -1168,6 +1196,8 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   line-height: 22px;
   font-weight: 400;
   color: #444444;
+  margin: 0px;
+  margin-top: 10px;
 }
 /*-- КАРТА, КОРЗИНА И ОВЕРЛЭЙ ОБРАТНОЙ СВЯЗИ--*/
 
