@@ -19,7 +19,7 @@
 					<ul class="main-nav">
 						<li class="main-nav_li main-nav-studio"><a class="main-nav_link main-nav-studio_link" href="#">Студия</a></li>
 						<li class="main-nav_li main-nav-customers"><a class="main-nav_link main-nav-customers_link" href="#">Клиенты</a></li>
-						<li class="main-nav_li main-nav-magazine"><a class="main-nav_link main-nav-magazine_link" href="#">Магазин</a></li>
+						<li class="main-nav_li main-nav-magazine"><a class="main-nav_link main-nav-magazine_link main-nav-magazine_link_active" href="#">Магазин</a></li>
             <li class="main-nav_li main-nav-contacts"><a class="main-nav_link main-nav-contacts_link" href="#">Контакты</a></li>
 					</ul>
           <a class="main-navigation_basket" href="#">Корзина</a>
@@ -97,7 +97,7 @@
               </div>
               <section class="selected-item_hidden selected-item_visually-hidden">
                 <a class="selected-item_hidden_title"  href="#">Sedona</a>
-                <span class="selected-item_hidden_inform">Информационный сайт<br>для туристов</span>
+                <span class="selected-item_hidden_inform selected-item_hidden_inform_sedona">Информационный сайт для туристов</span>
                 <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
@@ -110,7 +110,7 @@
               </div>
               <section class="selected-item_hidden selected-item_visually-hidden">
                 <a class="selected-item_hidden_title"  href="#">Pink app</a>
-                <span class="selected-item_hidden_inform">Продуктовый лендинг<br>приложения для IOS и Android</span>
+                <span class="selected-item_hidden_inform selected-item_hidden_inform_sedona_pink">Продуктовый лендинг приложения для IOS и Android</span>
                 <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
@@ -123,7 +123,7 @@
               </div>
               <section class="selected-item_hidden selected-item_visually-hidden">
                 <a class="selected-item_hidden_title"  href="#">Barbershop</a>
-                <span class="selected-item_hidden_inform">Сайт салоны красоты.<br> Для мужчин, да.</span>
+                <span class="selected-item_hidden_inform selected-item_hidden_inform_barbershop">Сайт салоны красоты. Для мужчин, да.</span>
                 <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
@@ -136,7 +136,7 @@
               </div>
               <section class="selected-item_hidden selected-item_visually-hidden">
                 <a class="selected-item_hidden_title"  href="#">Mishka</a>
-                <span class="selected-item_hidden_inform">Интернет-магазин<br>вязаных игрушек</span>
+                <span class="selected-item_hidden_inform selected-item_hidden_inform_mishka">Интернет-магазин вязаных игрушек</span>
                 <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
@@ -149,7 +149,7 @@
               </div>
               <section class="selected-item_hidden selected-item_visually-hidden">
                 <a class="selected-item_hidden_title"  href="#">A plus</a>
-                <span class="selected-item_hidden_inform">Лендинг курсов повышения<br>квалификации</span>
+                <span class="selected-item_hidden_inform selected-item_hidden_inform_sedona_plus">Лендинг курсов повышения квалификации</span>
                 <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
@@ -162,7 +162,7 @@
               </div>
               <section class="selected-item_hidden selected-item_visually-hidden">
                 <a class="selected-item_hidden_title"  href="#">Кваст</a>
-                <span class="selected-item_hidden_inform">Промо-сайт производителя<br>крафтового кваса</span>
+                <span class="selected-item_hidden_inform selected-item_hidden_inform_sedona_kvas">Промо-сайт производителя крафтового кваса</span>
                 <button class="selected-item_hidden_cost" type="button">9 900 руб.</button>
               </section>
             </section>
@@ -181,9 +181,9 @@
       <div class="driving-wrapper">
         <section class="driving-address">
           <span class="driving-address_title">NЁRDS DESIGN STUDIO</span>
-          <span class="driving-address_adds">191186, Санкт-Петербург<br>
-                    ул. Б. Конюшенная, д. 19/8</span>
-          <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span><br>
+          <span class="driving-address_adds">191186, Санкт-Петербург</span>
+          <span class="driving-address_adds driving-address_adds_street">ул. Б. Конюшенная, д. 19/8</span>
+          <span class="driving-address_Tel">тел. +7 (812) 275-75-75</span>
           <a class="driving-address_btn driving-address_btn_red" href="./form_feedback.html">Напишите нам</a>
         </section>
         <div class="driving-map_marker">
@@ -212,19 +212,19 @@
 		</footer><!--/Блок подвала-->
 <!--Модальные формы-->
 <!--Модальная Форма обратной связи-->
-<div class="modal-feedback">
-  <button class="modal-feedback-btn_close" type="button" title="Закрыть">Закрыть</button>
-  <h3 class="modal-feedback_title">Напишите нам</h3>
-  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-    <label class="feedback-form-title feedback-form-title_name" for="feedback-name_field">Ваше имя:</label>
-    <input class="feedback_input feedback-name" type="text" name="feedback-name" id="feedback-name_field" placeholder="Представьтесь, пожалуйста">
-    <label class="feedback-form-title feedback-form-title_email" for="feedback-email_field">Ваш e-mail:</label>
-    <input class="feedback_input feedback-email" type="email" name="feedback-email" id="feedback-email_field" placeholder="Для отправки ответа">
-    <label class="feedback-form-title feedback-form-title_text" for="feedback-text-field">Текст письма:</label>
-    <textarea class="feedback-text" name="feedback-text" rows="6" id="feedback-text-field" placeholder="В свободной форме"></textarea>
-    <button class="modal-feedback_btn" type="submit" title="Отправить">Отправить</button>
-  </form>
-</div><!--/Форма обратной связи-->
-	<script src="js/script.min.js"></script>
+    <div class="modal-feedback">
+      <button class="modal-feedback-btn_close" type="button" title="Закрыть">Закрыть</button>
+      <h3 class="modal-feedback_title">Напишите нам</h3>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="feedback-form-title feedback-form-title_name" for="feedback-name_field">Ваше имя:</label>
+        <input class="feedback_input feedback-name" type="text" name="feedback-name" id="feedback-name_field" placeholder="Представьтесь, пожалуйста">
+        <label class="feedback-form-title feedback-form-title_email" for="feedback-email_field">Ваш e-mail:</label>
+        <input class="feedback_input feedback-email" type="email" name="feedback-email" id="feedback-email_field" placeholder="Для отправки ответа">
+        <label class="feedback-form-title feedback-form-title_text" for="feedback-text-field">Текст письма:</label>
+        <textarea class="feedback-text" name="feedback-text" rows="6" id="feedback-text-field" placeholder="В свободной форме"></textarea>
+        <button class="modal-feedback_btn" type="submit" title="Отправить">Отправить</button>
+      </form>
+    </div><!--/Форма обратной связи-->
+    <script src="js/script.min.js"></script>
   </body>
 </html>

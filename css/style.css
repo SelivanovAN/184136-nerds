@@ -1,11 +1,10 @@
 body {
   margin: 0px;
   padding: 0px;
-	min-width: 1440px;
   font-family: "Roboto", "Tahoma", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   color: #000000;
 }
 a {
@@ -53,7 +52,6 @@ img {
   padding: 0;
   text-transform: uppercase;
 }
-
 .main-nav_link {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
@@ -109,14 +107,8 @@ img {
   opacity: 0.3;
   border-bottom: 2px solid #fb565a;
 }
-.main-nav_link:active:visited {
+.main-nav-magazine_link_active {
   border-bottom: 2px solid #fb565a;
-}
-.main-header_title_wrapper {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #eeeeee;
 }
 .main-header_title {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -124,12 +116,10 @@ img {
   line-height: 55px;
   font-weight: 500;
   color: #000000;
-  width: 1160px;
-  padding-left: 236px;
-  padding-right: 20px;
   margin: 0px;
   padding-bottom: 110px;
   padding-top: 70px;
+  text-align: center;
 }
 .main-header_title_wrapper {
   margin-bottom: 57px;
@@ -184,7 +174,6 @@ img {
   background: #ffffff;
   border-radius: 50%;
 }
-
 .slider-list {
   margin: 0;
   padding: 0;
@@ -194,7 +183,6 @@ img {
   display: none;
   padding: 71px 0 80px 0;
 }
-
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-position: 93% 11px;
@@ -213,15 +201,12 @@ img {
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
   display: block;
 }
-
 #product-2:checked ~ .slider-list .slider-item:nth-child(2) {
   display: block;
 }
-
 #product-3:checked ~ .slider-list .slider-item:nth-child(3) {
   display: block;
 }
-
 #product-1:checked ~ .slider-controls .slider-controls-item--1::before,
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before,
 #product-3:checked ~ .slider-controls .slider-controls-item--3::before {
@@ -284,16 +269,16 @@ img {
 }
 /*-- БЛОК ПРОМО АКЦИИ --*/
 .container {
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
-  display: flex;
   flex-wrap: wrap;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 79px;
 }
 .promo-wrapper {
   display: flex;
-  width: 1160px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 81px;
@@ -374,7 +359,6 @@ img {
 }
 /*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 .description {
-  width: 1440px;
   background-color: #ffffff;
 }
 .description-wrapper {
@@ -446,7 +430,6 @@ img {
   left: 0px;
   background-color: #fb565a;
 }
-
 .description-statistics {
   width: 360px;
 }
@@ -496,7 +479,6 @@ img {
 }
 /*-- БЛОК ПОРТФОЛИО ВЫПОЛНЕННЫХ САЙТОВ --*/
 .portfolio {
-  width: 1440px;
   background-color: #ffffff;
 }
 .portfolio-catalog {
@@ -504,15 +486,12 @@ img {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  /*padding-left: 20px;
-  padding-right: 20px;*/
   padding-top: 50px;
   padding-bottom: 34px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 19px;
 }
 .portfolio-catalog-site_link img {
   opacity: 0.2;
@@ -568,15 +547,14 @@ img {
 }
 /*-- БЛОК ПРОЕЗДА АДРЕСА --*/
 .driving {
-  background-color: #e9e5dc;
   margin-top: 61px;
 }
 .container-map {
-  width: 1440px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-image: url("../img/map.png");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 416px;
 }
@@ -585,13 +563,12 @@ img {
   width: 1160px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 54px;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
 }
 .driving-address {
-  position: absolute;
-  top: 54px;
   padding-top: 50px;
   padding-left: 50px;
   width: 269px;
@@ -614,11 +591,13 @@ img {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
-  margin-bottom: 18px;
+}
+.driving-address_adds_street {
+  margin-bottom: 19px;
 }
 .driving-address_Tel {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 38px;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -694,13 +673,11 @@ img {
 }
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 .range-controls .bar {
   width: 70%;
   height: 2px;
-
   background: #00ca74;
 }
 .range-controls .toggle {
@@ -1015,7 +992,6 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
 .sorting-item_name_sleep:active {
   color: rgb(0, 0, 0);
 }
-
 .selection-forms_elements {
   width: 260px;
 }
@@ -1093,11 +1069,23 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
 }
 .selected-item_hidden_inform {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+}
+.selected-item_hidden_inform_sedona,
+.selected-item_hidden_inform_barbershop,
+.selected-item_hidden_inform_mishka {
+  width: 200px;
+}
+.selected-item_hidden_inform_sedona_pink,
+.selected-item_hidden_inform_sedona_plus,
+.selected-item_hidden_inform_sedona_kvas {
+  width: 228px;
 }
 .selected-item_hidden_cost {
   display: block;
@@ -1194,8 +1182,9 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   margin-top: 69px;
   margin-bottom: 70px;
 }
-.container {
+.footer .container {
   display: flex;
+  padding: 0px;
 }
 .footer,
 .footer-social,
@@ -1292,7 +1281,7 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
 .feedback_input:focus {
   color: rgba(68, 68, 68);
   border: 2px solid rgb(0, 0, 0);
-}/*e74246 цвет невалидное значение*/
+}
 .feedback-text {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
