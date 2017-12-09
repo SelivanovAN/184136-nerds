@@ -105,7 +105,6 @@ img {
 .main-nav_link:active {
   color: #000000;
   opacity: 0.3;
-  border-bottom: 2px solid #fb565a;
 }
 .main-nav-magazine_link_active {
   border-bottom: 2px solid #fb565a;
@@ -782,33 +781,37 @@ img {
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border: 5px solid rgba(77, 77, 77, 0.4);
+  left: 0px;
+  top: -2px;
+  border-radius: 100%;
+  background-image: url("../img/radio-off.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.grid-item_radio:checked + .grid-item_label::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
   left: 0px;
   top: -2px;
   border-radius: 50%;
-}
-.grid-item_radio:checked + .grid-item_label::after {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  box-sizing: border-box;
-  left: 8px;
-  top: 5px;
-  border-radius: 100%;
-  background-color: rgba(77, 77, 77, 0.4);
+  background-image: url("../img/radio-on.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .grid-item_radio:hover + .grid-item_label::before {
-  border: 5px solid rgba(77, 77, 77, 1);
+  background-image: url("../img/radio-hover-off.png");
 }
-.grid-item_radio:checked:hover + .grid-item_label::after {
-  background-color: rgba(77, 77, 77, 1);
+.grid-item_radio:checked:hover + .grid-item_label::before {
+  background-image: url("../img/radio-hover-on.png");
 }
 .grid-item_radio:disabled + .grid-item_label::before {
-  border: 5px solid rgba(77, 77, 77, 0.1);
+  background-image: url("../img/radio-disable-off.png");
 }
-.grid-item_radio:checked:disabled + .grid-item_label::after {
-  background-color: rgba(77, 77, 77, 0.1);
+.grid-item_radio:checked:disabled + .grid-item_label::before {
+  background-image: url("../img/radio-disable-on.png");
 }
 .specialty-title {
   font-family: "Roboto", "Tahoma", sans-serif;
