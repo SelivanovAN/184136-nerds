@@ -1057,7 +1057,7 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
   height: 574px;
   cursor: pointer;
   box-sizing: border-box;
-  border: 1px solid #e5e5e5;
+  /*border: 1px solid #e5e5e5;*/
 }
 .selected-item_hidden {
   display: block;
