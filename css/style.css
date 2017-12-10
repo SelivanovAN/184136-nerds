@@ -156,6 +156,7 @@ img {
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -277,6 +278,7 @@ img {
 }
 .promo-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -286,6 +288,9 @@ img {
 .promo-section {
   width: 300px;
   margin-right: 100px;
+}
+.promo-section:nth-child(3n) {
+  margin: 0px;
 }
 .promo-section-img_wrapper {
   width: 300px;
@@ -482,6 +487,7 @@ img {
 }
 .portfolio-catalog {
   display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
@@ -594,7 +600,7 @@ img {
 .driving-address_adds_street {
   margin-bottom: 19px;
 }
-.driving-address_Tel {
+.driving-address_tel {
   display: block;
   margin-bottom: 38px;
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -618,6 +624,16 @@ img {
 }
 .driving-address_btn_red {
   background-color: #fb565a;
+}
+.driving-address_btn:hover {
+  background-color: #e74246;
+  cursor: pointer;
+}
+.driving-address_btn:active {
+  background-color: #d7373b;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgb(193, 49, 53) inset;
 }
 .driving-map_marker {
   position: absolute;
@@ -704,6 +720,7 @@ img {
 }
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 50%;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
@@ -1166,7 +1183,7 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
 .selected-items_page_block:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 -3px 0 0 #bfbfbf;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 .selected-items_page_page_next {
   display: block;
@@ -1218,6 +1235,7 @@ box-shadow: 0 -3px 0 0 #bfbfbf;
 .social-btn:active,
 .social-btn:active {
   background-color: rgb(215, 55, 59);
+  box-shadow: inset 0 3px 0 0 #c13135;
 }
 .social-btn:active path,
 .social-btn:active path {
