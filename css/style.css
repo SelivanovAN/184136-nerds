@@ -458,8 +458,8 @@ img {
 }
 .description-statistics-number_percent_sup {
   font-family: "Roboto", "Tahoma", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
+  font-size: 28px;
+  font-weight: 700;
 }
 .description-statistics-number:nth-child(1) {
   margin-right: 21px;
@@ -659,6 +659,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
+  letter-spacing: 1px;
 }
 .range-controls {
   position: relative;
