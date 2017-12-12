@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
 <!--Блок шапки-->
@@ -178,12 +179,20 @@
       <button class="modal-feedback-btn_close" type="button" title="Закрыть">Закрыть</button>
       <h3 class="modal-feedback_title">Напишите нам</h3>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="feedback-form-title feedback-form-title_name" for="feedback-name_field">Ваше имя:</label>
-        <input class="feedback_input feedback-name" type="text" name="feedback-name" id="feedback-name_field" placeholder="Представьтесь, пожалуйста">
-        <label class="feedback-form-title feedback-form-title_email" for="feedback-email_field">Ваш e-mail:</label>
-        <input class="feedback_input feedback-email" type="email" name="feedback-email" id="feedback-email_field" placeholder="Для отправки ответа">
-        <label class="feedback-form-title feedback-form-title_text" for="feedback-text-field">Текст письма:</label>
-        <textarea class="feedback-text" name="feedback-text" rows="6" id="feedback-text-field" placeholder="В свободной форме"></textarea>
+        <div class="feedback-form_elements_wrapper">
+          <label class="feedback-form-title_label feedback-form-title_name" for="feedback-name_field">
+            <span class="feedback-form-title_span feedback-form-title_span_name">Ваше имя:</span>
+            <input class="feedback_input feedback-name" type="text" name="feedback-name" id="feedback-name_field" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label class="feedback-form-title_label feedback-form-title_email" for="feedback-email_field">
+            <span class="feedback-form-title_span feedback-form-title_span_email">Ваш e-mail:</span>
+            <input class="feedback_input feedback-email" type="email" name="feedback-email" id="feedback-email_field" placeholder="Для отправки ответа">
+          </label>
+          <label class="feedback-form-title_label feedback-form-title_text" for="feedback-text-field">
+            <span class="feedback-form-title_span feedback-form-title_span_text">Текст письма:</span>
+            <textarea class="feedback-text" name="feedback-text" rows="6" id="feedback-text-field" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
         <button class="modal-feedback_btn" type="submit" title="Отправить">Отправить</button>
       </form>
     </div><!--/Форма обратной связи-->
