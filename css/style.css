@@ -685,6 +685,7 @@ img {
           box-shadow: 0 3px rgb(193, 49, 53) inset;
 }
 .driving-map_marker {
+  display: none;
   position: absolute;
   width: 231px;
   height: 190px;
