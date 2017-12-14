@@ -1071,6 +1071,12 @@ color: rgba(0, 0, 0, 0.5);
   width: 11px;
   height: 10px;
 }
+.sorting-item_down_active:hover path {
+  fill: #a6a6a6;
+}
+.sorting-item_down_active:active path {
+  fill: #231f20;
+}
 .sorting-item .sorting-item_up {
   font-size: 0px;
   display: -webkit-box;
@@ -1086,6 +1092,15 @@ color: rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
   width: 11px;
   height: 10px;
+}
+.sorting-item_up path {
+  fill: #ededed;
+}
+.sorting-item_up_active:hover path {
+  fill: #a6a6a6;
+}
+.sorting-item_up_active:active path {
+  fill: #231f20;
 }
 .sorting-item_link {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -1393,7 +1408,6 @@ color: rgba(0, 0, 0, 0.5);
   margin-top: 10px;
 }
 /*-- КАРТА, КОРЗИНА И ОВЕРЛЭЙ ОБРАТНОЙ СВЯЗИ--*/
-
 /*-- ОКНО ОБРАТНОЙ СВЯЗИ--*/
 @-webkit-keyframes bonuce {
   0%		{-webkit-transform: translateX(-2000px);transform: translateX(-2000px);}
