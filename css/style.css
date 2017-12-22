@@ -539,12 +539,37 @@ img {
   padding-bottom: 34px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.portfolio-catalog-site_wrapper {
+  width: 260px;
+  min-height: 97px;
+  margin-right: 40px;
+}
+.portfolio-catalog-site_wrapper:nth-child(4n) {
+  margin-right: 0px;
+}
+.portfolio-catalog-site_link_html {
+  position: absolute;
+  top: 13px;
+  left: 32px;
+}
+.portfolio-catalog-site_link_site_border_barbershop {
+  position: absolute;
+  top: -4px;
+  left: 27px;
+}
+.portfolio-catalog-site_link_site_border_pink {
+  position: absolute;
+  top: 16px;
+  left: 37px;
+}
+.portfolio-catalog-site_link_site_border_barbershop_mishka {
+  position: absolute;
+  top: 2px;
+  left: 45px;
 }
 .portfolio-catalog-site_link img {
   opacity: 0.2;
@@ -558,6 +583,7 @@ img {
 .portfolio-catalog-site_wrapper_line {
   position: relative;
 }
+/*
 .portfolio-catalog-site_wrapper_line:nth-child(1) {
   margin-left: 31px;
 }
@@ -567,36 +593,36 @@ img {
 .portfolio-catalog-site_wrapper_line:nth-child(4) {
   margin-right: 43px;
   background-color: transparent;
-}
-.portfolio-catalog-site_border_html::after {
+}*/
+.portfolio-catalog-site_wrapper:nth-child(1)::after {
   content: "";
   display: block;
   position: absolute;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  right: -51px;
-  top: 5px;
+  right: -21px;
+  top: 13px;
 }
-.portfolio-catalog-site_border_barbershop::after {
+.portfolio-catalog-site_wrapper:nth-child(2)::after {
   content: "";
   display: block;
   position: absolute;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  right: -43px;
+  right: -22px;
   top: 14px;
 }
-.portfolio-catalog-site_border_pink::after {
+.portfolio-catalog-site_wrapper:nth-child(3)::after {
   content: "";
   display: block;
   position: absolute;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  right: -58px;
-  top: -5px;
+  right: -21px;
+  top: 15px;
 }
 /*-- БЛОК ПРОЕЗДА АДРЕСА --*/
 .driving {
